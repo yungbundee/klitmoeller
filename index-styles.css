@@ -1,0 +1,1014 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #FFF8ED;
+    transition: 1s all;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.changeColorBlue {
+    background: #AFCAE0;
+
+}
+
+.changeColorDarkBlue {
+    background: #324554;
+}
+
+.changeColorBlack {
+    background: #000000;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #989898;
+    font-family: 'King';
+    text-decoration: none;
+
+    transition: 1s all;
+}
+
+
+
+a:hover {
+    color: #313131;
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: 'King';
+    src: url('fonts/King.woff2') format('woff2'),
+        url('fonts/King.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CRACKERS BRUSHER';
+    src: url('fonts/CRACKERSBRUSHER.woff2') format('woff2'),
+        url('fonts/CRACKERSBRUSHER.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('fonts/Kiona-Regular.woff2') format('woff2'),
+        url('fonts/Kiona-Regular.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+
+
+/*----------------HEADER-------------------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 999;
+
+
+}
+
+.navbar {
+
+    /*    position: relative;*/
+    /*  overflow: hidden;*/
+    background-color: #FFF8ED;
+
+    font-size: 20px;
+
+
+
+    font-weight: 100;
+
+    transition: .4s;
+
+
+}
+
+.nav-colored {
+
+    transition: .4s;
+    /*    background: rgba(255, 243, 222, 0.32);*/
+    z-index: 100;
+
+
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    /*    color: rgba(255, 255, 255, 0.7);*/
+    color: #989898;
+
+}
+
+.nav-links:hover,
+    {
+    text-decoration: none;
+    /*    color: rgba(255, 255, 255, 0.7);*/
+
+}
+
+.active {
+    display: block;
+    padding-bottom: 10vw;
+    margin-top: 23vw;
+    background-color: #FFF8ED;
+    width: 100%;
+    height: 30vw;
+    padding: 5vw;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.main-nav li {
+    text-align: center;
+    margin: 0 auto;
+    margin: 1vw 0vw;
+
+}
+
+.logo-mobile {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 10px;
+    float: left;
+}
+
+.logo-mobile img {
+    width: 50px;
+}
+
+.logo img {
+    display: none;
+}
+
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        float: none;
+        display: block;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+
+        transform: translate(-54%);
+
+    }
+
+    .main-nav li {
+        margin: 0;
+
+    }
+
+    .nav-links {
+        margin: 40px;
+        font-size: 10px;
+
+    }
+
+    .logo img {
+        margin: 0px 40px;
+        margin-top: 5px;
+        width: 50px;
+        display: block;
+
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+
+        text-decoration: underline;
+
+    }
+
+    .active {
+        display: inline-block;
+        padding-bottom: 0vw;
+        margin-top: 0vw;
+        background-color: #FFF8ED;
+        width: 100%;
+        height: 0vw;
+    }
+
+}
+
+.header-text {
+    color: rgba(152, 152, 152, 0.63);
+    font-family: 'Kiona';
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.5vw;
+    letter-spacing: 3px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-text {
+        color: rgba(152, 152, 152, 0.63);
+        font-family: 'Kiona';
+        text-align: center;
+        font-weight: lighter;
+        font-size: 10px;
+        letter-spacing: 3px;
+        padding-top: 80px;
+    }
+}
+
+
+
+
+
+
+/*----------------HEADER END-------------------*/
+
+
+
+/*----------------CLOTHING SECTION-------------------*/
+
+.main-first {
+    position: relative;
+    padding-top: 5vw;
+    z-index: 9;
+
+}
+
+.first-bg {
+    background-color: #DDD4C4;
+    width: 80vw;
+    height: 115vw;
+    position: absolute;
+    top: 30%;
+
+    margin: 0vw 9.5vw;
+
+}
+
+
+
+.first-video {
+
+    position: absolute;
+    top: -65%;
+    left: 16.8%;
+}
+
+
+.first-video video {
+    max-width: 66vw;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+.first-header {
+    position: absolute;
+    top: 317%;
+    left: 19%;
+    font-size: 7.3vw;
+    color: #426580;
+
+}
+
+.first-header h1 {
+    font-family: 'CRACKERS BRUSHER';
+    font-weight: 100;
+
+}
+
+.first-keywords {
+    padding: 38vw 0vw 0vw 9vw;
+}
+
+.first-keywords h3 {
+    color: #FFF3DE;
+    font-family: 'King';
+    font-size: 5.8vw;
+    font-weight: 100;
+}
+
+.main-first hr {
+
+    border: 1px solid #FFF3DE;
+
+}
+
+.first-description {
+    padding: 1vw 0vw 0vw 10vw;
+}
+
+.first-description p {
+    color: #989898;
+    font-family: 'King';
+    font-size: 3.4vw;
+    font-weight: 100;
+    padding: 0vw 10vw 0vw 0vw;
+    line-height: 7vw;
+
+}
+
+
+
+.shop-now {
+    position: absolute;
+    top: 95%;
+    left: 30%;
+    width: 24vw;
+    height: 4vw;
+    padding: 3vw;
+
+    background-color: #426580;
+    text-align: center;
+    color: #FFF3DE;
+    font-family: 'King';
+    font-size: 4vw;
+    font-weight: 100;
+
+}
+
+.shop-now:hover {
+
+
+    background-color: #1c3446;
+
+    color: #FFF3DE;
+
+
+
+}
+
+/*----------------CLOTHING MEDIA QUERRY Tablet-------------------*/
+
+@media screen and (min-width:541px) {
+    .main-first {
+        padding-top: 4vw;
+    }
+
+    .first-bg {
+        width: 88vw;
+        height: 83vw;
+        top: 30%;
+        margin: 0vw 6.8vw;
+    }
+
+    .first-video {
+        top: -65%;
+        left: 14%;
+    }
+
+    .first-video video {
+        max-width: 74vw
+    }
+
+    .first-header {
+        top: 520%;
+        left: 20%;
+        font-size: 7.56vw;
+
+    }
+
+    .first-keywords {
+        padding: 42vw 0vw 0vw 7vw;
+    }
+
+    .first-keywords h3 {
+        font-size: 4vw;
+        margin-bottom: 5vw;
+
+    }
+
+    .first-description {
+        padding: 1vw 0vw 0vw 7vw;
+    }
+
+    .first-description p {
+        font-size: 2.5vw;
+        padding: 0vw 10vw 0vw 0vw;
+        line-height: 3vw;
+
+    }
+
+    .shop-now {
+        left: 35%;
+        width: 15vw;
+        height: 2vw;
+        font-size: 2.5vw;
+
+    }
+
+}
+
+/*----------------CLOTHING Media Querry Desktop Large-------------------*/
+
+
+@media screen and (min-width:768px) {
+    .main-first {
+        padding-top: 2vw;
+    }
+
+    .first-bg {
+        width: 79vw;
+        height: 37vw;
+        top: 30%;
+        left: 10%;
+        margin: 0vw 4vw;
+    }
+
+    .first-video {
+        top: -65%;
+        left: 11%;
+    }
+
+    .first-video video {
+        max-width: 55vw;
+    }
+
+    .first-header {
+        top: -177%;
+        left: 53%;
+        font-size: 4.5vw;
+
+    }
+
+    .first-keywords {
+        padding: 11vw 0vw 0vw 54.1vw;
+    }
+
+    .first-keywords h3 {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+
+    }
+
+    .first-description {
+        padding: 0vw 0vw 0vw 53.1vw;
+    }
+
+    .first-description p {
+        font-size: 1vw;
+        padding: 0vw 2vw 0vw 1vw;
+        line-height: 1.5vw;
+    }
+
+    .shop-now {
+        top: 72.2%;
+        left: 68.5%;
+        width: 9vw;
+        height: 1.4vw;
+        font-size: 1.2vw;
+        padding: 0.5vw;
+    }
+
+    .main-first hr {
+
+        border: 1px solid #FFF3DE;
+        margin-left: 5vw;
+
+    }
+
+}
+
+
+
+/*----------------ABOUT SECTION-------------------*/
+
+.main-second {
+    position: relative;
+    padding-top: 600vw;
+}
+
+.second-bg {
+    background-color: #3A4D5D;
+    width: 73vw;
+    height: 270vw;
+    position: absolute;
+    top: 30%;
+
+    margin: 0px 13vw;
+}
+
+.second-pic {
+    overflow: hidden;
+    position: absolute;
+
+    top: 26%;
+    left: 18%;
+    width: 50%;
+    margin: 6vw;
+    height: 58vw;
+    background-repeat: no-repeat;
+
+
+}
+
+.second-pic img {
+    height: 93vw;
+
+
+
+}
+
+.second-header {
+    position: absolute;
+    top: 33.5%;
+    left: 16%;
+    font-size: 7.8vw;
+    color: #FFF3DE;
+}
+
+.second-header h1 {
+    font-family: 'CRACKERS BRUSHER';
+    font-weight: 100;
+
+}
+
+.second-keywords {
+    padding: 46vw 0vw 0vw 11vw;
+}
+
+.second-keywords h3 {
+    color: #FFF3DE;
+    font-family: 'King';
+    font-size: 5vw;
+    font-weight: 100;
+}
+
+.main-second hr {
+
+    border: 0.11vw solid #D7DEDE;
+
+}
+
+.second-description {
+    padding: 1vw 0vw 0vw 10vw;
+}
+
+.second-description p {
+    color: #989898;
+    font-family: 'King';
+    font-size: 4vw;
+    font-weight: 100;
+    padding: 0px 10vw 10vw 0vw;
+    line-height: 7vw;
+}
+
+.second-description a {
+    color: #ffffff;
+
+}
+
+.second-tagline {
+    position: absolute;
+    top: 74%;
+    left: 16.5%;
+    height: 10vw;
+    width: 56vw;
+    background-color: #2B3B48;
+    font-family: 'King';
+    font-size: 3vw;
+    color: #D7DEDE;
+    padding: 0.3vw 5vw;
+    text-align: center;
+
+
+}
+
+/*--------------ABOUT Media Querry Tablet--------*/
+
+@media screen and (min-width: 541px) {
+
+    .main-second {
+        padding-top: 400vw;
+    }
+
+    .second-bg {
+        width: 73vw;
+        height: 140vw;
+        top: 30%;
+        margin: 0px 13vw;
+    }
+
+    .second-pic {
+        top: 30%;
+        left: 43%;
+        width: 50%;
+        margin: 4vw;
+        height: 66vw;
+    }
+
+
+
+    .second-header {
+        top: 29.4%;
+        left: 20%;
+        font-size: 7.5vw;
+    }
+
+    .second-keywords {
+        padding: 38vw 40vw 0vw 3vw;
+    }
+
+    .second-keywords h3 {
+        font-size: 4vw;
+
+    }
+
+    .second-description {
+        padding: 19vw 2vw 0vw 5vw;
+    }
+
+    .second-description p {
+        font-size: 2.5vw;
+        padding: 0vw 4vw 0vw 0vw;
+        line-height: 4vw;
+    }
+
+    .second-tagline {
+        top: 45.5%;
+        left: 49.5%;
+
+
+        height: 13vw;
+        width: 35vw;
+        background-color: rgba(43, 59, 72, 0.67);
+        font-family: 'King';
+        font-size: 3vw;
+        color: #D7DEDE;
+        padding: 0.3vw 5vw;
+        text-align: center;
+    }
+}
+
+/*--------------ABOUT Media Querry Desktop Small--------*/
+
+@media screen and (min-width: 768px) {
+
+    .main-second {
+        padding-top: 160vw;
+    }
+
+    .second-bg {
+        width: 60vw;
+        height: 46vw;
+        top: 32%;
+        left: 5%;
+        margin: 0px 13vw;
+    }
+
+    .second-pic {
+        top: 29%;
+        left: 56%;
+        width: 27.7vw;
+        margin: 2vw;
+        height: 40vw;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
+
+    }
+
+    .second-pic img {
+        height: 50vw;
+
+    }
+
+    .second-header {
+        top: 27.5%;
+        left: 26%;
+        font-size: 6vw;
+    }
+
+    .second-keywords {
+        padding: 13vw 20vw 0vw 3vw;
+    }
+
+    .second-keywords h3 {
+        font-size: 2vw;
+    }
+
+    .second-description {
+        padding: 1vw 25vw 0vw 1vw;
+    }
+
+    .second-description p {
+        font-size: 1.15vw;
+        padding: 0vw 2vw 0vw 1vw;
+        line-height: 1.5vw;
+
+    }
+
+    .second-tagline {
+        top: 54.1%;
+        left: 54%;
+
+        height: 3.5vw;
+        width: 25vw;
+        background-color: rgba(43, 59, 72, 0.65);
+
+        font-size: 1vw;
+        color: #D7DEDE;
+        padding: 0vw 0vw;
+
+    }
+}
+
+/*--------------ABOUT Media Querry Desktop Large--------*/
+
+
+
+
+/*----------------RAW SECTION-------------------*/
+
+.main-third {
+    position: relative;
+    padding-top: 12vw;
+}
+
+.third-video {
+    position: absolute;
+    top: -150%;
+
+}
+
+.third-video video {
+    width: 100%;
+
+
+}
+
+.third-header {
+    position: absolute;
+    top: -220%;
+    left: 4%;
+    font-size: 28px;
+    color: #d7e1e8;
+
+}
+
+.third-header h1 {
+    font-family: 'CRACKERS BRUSHER';
+    font-weight: 100;
+
+}
+
+
+.third-description {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    height: 40px;
+    width: 250px;
+
+    font-family: 'King';
+    font-size: 10px;
+    color: #D7DEDE;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+
+/*---------RAW Media Querry Tablet------------*/
+
+@media screen and (min-width:541px) {
+    .main-third {
+        padding-top: 150px;
+    }
+
+    .third-video {
+        top: -400%;
+
+    }
+
+    .third-header {
+        top: -460%;
+        left: 7%;
+        font-size: 38px;
+        z-index: 5;
+
+    }
+
+    .third-description {
+        top: -60%;
+        left: 14%;
+        height: 40px;
+        width: 350px;
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+
+}
+
+/*---------RAW Media Querry Desktop Small------------*/
+
+@media screen and (min-width:768px) {
+    .main-third {
+        padding-top: 350px;
+    }
+
+    .third-video {
+        top: -90%;
+
+    }
+
+    .third-header {
+        top: -125%;
+        left: 20%;
+        font-size: 38px;
+        z-index: 5;
+
+    }
+
+    .third-description {
+        top: 60%;
+        left: 25%;
+        height: 40px;
+        width: 350px;
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+
+}
+
+/*---------RAW Media Querry Desktop Large------------*/
+
+@media screen and (min-width:1280px) {
+    .main-third {
+        padding-top: 180px;
+    }
+
+    .third-video {
+        top: -90%;
+
+    }
+
+    .third-header {
+        top: -215%;
+        left: 23%;
+        font-size: 68px;
+        z-index: 5;
+
+    }
+
+    .third-description {
+        top: 500%;
+        left: 38%;
+        height: 40px;
+        width: 350px;
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+
+}
+
+/*--------------------FOOTER----------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'King';
+    font-size: 10px;
+    text-align: center;
+    color: #868686;
+    padding-bottom: 15px;
+
+}
+
+.footerline hr {
+    border: 1px solid #868686;
+
+}
+
+.phone-number {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.some {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.some-icons img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px;
+    opacity: 0.6;
+    transition: 0.2s;
+
+}
+
+.some-icons img:hover {
+
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+.email {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*------------FOOTER Media Querry Tablet----------*/
+
+@media screen and (min-width:541px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family: 'King';
+        font-size: 10px;
+        text-align: center;
+        color: #868686;
+        padding-bottom: 15px;
+
+    }
+
+    .phone-number {
+        flex-basis: 100px;
+    }
+
+    .some {
+        flex-basis: 100px;
+    }
+
+    .email {
+        flex-basis: 100px;
+    }
+}
+
+/*------------FOOTER Media Querry Tablet----------*/
+
+@media screen and (min-width:1280px) {
+
+    .footerline hr {
+
+        padding-top: 1000px;
+        margin-left: -5px;
+
+    }
+
+    .phone-number {
+        flex-basis: 100px;
+    }
+
+    .some {
+        flex-basis: 100px;
+    }
+
+    .email {
+        flex-basis: 100px;
+    }
+}

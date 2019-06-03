@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klitmoeller Collective</title>
+    <link rel="stylesheet" href="shop_page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="script.js"></script>
+
+</head>
+
+<header>
+
+    <nav class="navbar sticky">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+
+            <i class="fas fa-align-justify"></i>
+        </span>
+        <a href="index.html" class="logo-mobile"><img src="img/8tals-logo.png" alt=""></a>
+        <ul class="main-nav" id="js-menu">
+
+            <li>
+                <a href="shop.html" class="nav-links">shop.</a>
+            </li>
+
+            <li>
+                <a href="stores.html" class="nav-links">stores.</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="logo"><img src="img/8tals-logo.png" alt=""></a>
+            </li>
+
+
+            <li>
+                <a href="ethics.html" class="nav-links">ethics.</a>
+            </li>
+            <li>
+                <a href="raw.html" class="nav-links">#raw.</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="header-text-shop">
+        <h1>products.</h1>
+    </div>
+
+</header>
+
+<body>
+
+
+
+    <h1></h1>
+    <header>
+        <nav class="shop_nav">
+            <button class="filter valgt" data-category="men">men</button>
+            <button class="filter" data-category="women">women</button>
+            <button class="filter" data-category="kids">kids</button>
+            <button class="filter" data-category="accessories">accessories</button>
+            <button class="filter" data-category="posters">posters</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+        </section>
+    </main>
+
+
+
+    <footer></footer>
+
+
+    <script>
+        let products = [];
+        let filter = "men";
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dest = document.querySelector("#products");
+            let temp = document.querySelector("template");
+
+
+            async function getJson() {
+
+                let jsonData = await fetch("http://naomitangoe.dk/kea/klitmoellercollective_WP/wordpress_KMC/wp-json/wp/v2/product/?per_page=100");
+                products = await jsonData.json();
+                console.log(products);
+                visProducts();
+
+            }
+
+
+            function visProducts() {
+
+                dest.innerHTML = "";
+                products.forEach(eachProduct => {
+                    if (filter == eachProduct.main_category) {
+
+                        let template =
+                            `<article class="products">
+                <img class="billede" src = "${eachProduct.product_picture[0].guid}">
+                <p>${eachProduct.product_price} </p>
+                <h3>${eachProduct.product_name}</h3>
+
+
+                    </article>`;
+                        console.log(eachProduct.product_picture)
+
+                        dest.insertAdjacentHTML("beforeend", template);
+                        dest.lastElementChild.addEventListener("click", () => {
+                            location.href = "products-singleview.html?id=" + eachProduct.id;
+
+
+                        });
+                    }
+
+                })
+
+            }
+
+
+            //function visProducts slut
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                filter = this.getAttribute("data-category");
+
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.classList.remove("valgt");
+                })
+                this.classList.add("valgt");
+
+                visProducts();
+            }
+
+            getJson()
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>

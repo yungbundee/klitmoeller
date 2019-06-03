@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Klitmøller Collective</title>
+
+    <link rel="stylesheet" href="stores-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+
+    <header>
+
+
+        <nav class="navbar sticky">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+
+                <i class="fas fa-align-justify"></i>
+            </span>
+            <a href="index.html" class="logo-mobile"><img src="img/8tals-logo-hvid.png" alt=""></a>
+            <ul class="main-nav" id="js-menu">
+
+                <li>
+                    <a href="shop.html" class="nav-links">shop.</a>
+                </li>
+
+                <li>
+                    <a href="stores.html" class="nav-links">stores.</a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="logo"><img src="img/8tals-logo-hvid.png" alt=""></a>
+                </li>
+
+
+                <li>
+                    <a href="ethics.html" class="nav-links">ethics.</a>
+                </li>
+                <li>
+                    <a href="raw.html" class="nav-links">#raw.</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+
+    </header>
+
+
+    <main id="store">
+
+
+
+        <div class="splash_store">
+
+        </div>
+
+
+        <div class="store">
+            <div class="store_header">
+                <h1>Where to find us</h1>
+            </div>
+
+            <div class="store_pic">
+                <img src="img/store_inside.jpg" alt="klitmollerstore">
+            </div>
+
+            <div class="store_tagline">
+
+
+                <p>Stop by our Klitmøller Collective store, in the heart of Klitmøller.</p>
+
+            </div>
+
+            <div class="store_text">
+
+                <p>We are very proud of our local Klitmøller Collective store on the mainroad of Klitmøller. You will experience the passion and the lifestyle of our most beloved brand. A big part of Klitmøller collective is the history within this authentic fishing village, where surfers and fishermen united as the town we know today. Hopefully you will get a taste of that, if viseting ud in our store.</p>
+
+            </div>
+
+
+        </div>
+        <div class="retailer">
+            <div class="retailer_header">
+                retailers
+            </div>
+
+            <div class="locator">
+
+                <form class="navigator">
+                    <input type="text" name="search" placeholder="ENTER ZIPCODE OR ADRESS">
+
+                </form>
+
+                <form class="navigator">
+                    <input type="text" name="search" placeholder="SEARCH RADIUS">
+                </form>
+
+            </div>
+
+            <button class="button">
+                <p>search</p>
+            </button>
+
+            <div id="displayResult" class="hide">
+
+                <div class="adress">
+                    <p>Project 4 <br>
+                        Larsbjørnsstræde 19, st., tv. København K 1454 <br>
+                        Denmark</p>
+                </div>
+
+                <div class="adress">
+                    <p>Flavour <br>
+                        Skindergade 19, st. <br>
+                        København K 1159 <br>
+                        Denmark</p>
+                </div>
+
+                <div class="adress">
+                    <p>Labor <br>
+                        Elmegade 17 <br>
+                        København N 2200 <br>
+                        Denmark</p>
+                </div>
+
+                <div class="adress">
+                    <p>M.U.D. ApS <br>
+                        Østerbrogade 51B <br>
+                        København Ø 2100 <br>
+                        Denmark</p>
+                </div>
+
+                <div class="adress">
+                    <p>Å ApS <br>
+                        Østerbrogade 148 <br>
+                        København Ø 2100 <br>
+                        Denmark</p>
+                </div>
+
+                <div class="adress">
+                    <p>Less Vegas <br>
+                        Strandvejen 114 <br>
+                        Hellerup 2900 <br>
+                        Denmark</p>
+                </div>
+
+
+                <div class="adress">
+                    <p>Noe Living <br>
+                        Hovedgaden 45 <br>
+                        Birkerød 3460 <br>
+                        Denmark</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-----------------Footer Section-------------->
+    <div class="footerline">
+        <hr>
+    </div>
+    <footer>
+
+
+        <div class="phone-number">
+
+            <p>call us. <br>
+                +45 53 50 40 62</p>
+        </div>
+
+        <div class="some">
+            <p>follow us.</p>
+
+            <div class="some-icons">
+                <img src="img/facebook-white.png" alt="facebook-icon">
+                <img src="img/instagram.png" alt="instagram-icon">
+
+            </div>
+        </div>
+
+        <div class="email">
+            <p>get in contact. <br>
+                contact@kmcollective.dk</p>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", showIndhold);
+
+    function showIndhold() {
+
+        console.log("showIndhold");
+
+        document.querySelector(".button").addEventListener("click", showAdress);
+
+    }
+
+    function showAdress() {
+
+        console.log("showaAdress");
+
+        document.querySelector("button").removeEventListener("click", showAdress);
+        document.querySelector("#displayResult").classList.remove("hide");
+
+
+    }
+
+</script>

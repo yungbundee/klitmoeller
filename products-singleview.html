@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="shop-styles.css">
+
+</head>
+
+<header>
+
+    <nav class="navbar sticky">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+
+            <i class="fas fa-align-justify"></i>
+        </span>
+        <a href="index.html" class="logo-mobile"><img src="img/8tals-logo.png" alt=""></a>
+        <ul class="main-nav" id="js-menu">
+
+            <li>
+                <a href="shop.html" class="nav-links ">shop.</a>
+            </li>
+
+            <li>
+                <a href="stores.html" class="nav-links">stores.</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="logo"><img src="img/8tals-logo.png" alt=""></a>
+            </li>
+
+
+            <li>
+                <a href="ethics.html" class="nav-links">ethics.</a>
+            </li>
+            <li>
+                <a href="raw.html" class="nav-links">#raw.</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+</header>
+
+
+
+
+<body>
+    <div id="singleview">
+        <div id="tilbage"><button>
+                <p>
+                </p>
+            </button> </div>
+        <div id="indhold">
+        </div>
+
+
+
+        <div id="similarproducts">
+            <p>similar products.</p>
+
+            <div class="similar"></div>
+        </div>
+
+
+    </div>
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+
+        let product;
+        let similarProduct;
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dest = document.querySelector("#products");
+            let temp = document.querySelector("template");
+
+            async function getJson() {
+                let jsonData = await fetch("http://naomitangoe.dk/kea/klitmoellercollective_WP/wordpress_KMC/wp-json/wp/v2/product/" + id);
+
+                åbn();
+
+            }
+
+
+            function åbn() {
+                document.querySelector("#indhold").innerHTML =
+                    `<article class="products">
+                <img class="billede" src = "${product.product_picture[0].guid}">
+<article class="products_info">
+            <article class="products_header">   <h3>${product.product_name}</h3> <h3>${product.product_price} </h3>
+                 </article>
+
+<p>${product.content.rendered} </p>
+
+<article class="products_content">
+<article class="products_pick"><h4>color</h4><p> ${product.color} </p></article>
+<article class="products_pick"><h4>size</h4><p> ${product.size} </p></article>
+<article class="products_pick"><h4>quantity</h4><p> ${product.quantity} </p></article>
+</article>
+<article class="products_addtocart"><h4>add to cart</h4></article>
+
+        </article>
+                    </article>`;
+
+
+
+            }
+
+            document.querySelector("#tilbage button").addEventListener("click", () => {
+                location.href = "shop.html"
+            })
+            getJson()
+        }
+
+    </script>
+
+
+</body>
+
+</html>

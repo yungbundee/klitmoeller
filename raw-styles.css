@@ -1,0 +1,704 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #000000;
+
+}
+
+a {
+    text-decoration: none;
+    color: #989898;
+    font-family: 'King';
+}
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: 'King';
+    src: url('fonts/King.woff2') format('woff2'),
+        url('fonts/King.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CRACKERS BRUSHER';
+    src: url('fonts/CRACKERSBRUSHER.woff2') format('woff2'),
+        url('fonts/CRACKERSBRUSHER.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('fonts/Kiona-Regular.woff2') format('woff2'),
+        url('fonts/Kiona-Regular.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+
+
+/*----------------HEADER-------------------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 999;
+
+
+}
+
+.navbar {
+
+    /*    position: relative;*/
+    /*  overflow: hidden;*/
+    background-color: #000000;
+
+    font-size: 20px;
+
+
+
+    font-weight: 100;
+
+    transition: .4s;
+
+
+}
+
+.nav-colored {
+
+    transition: .4s;
+    /*    background: rgba(255, 243, 222, 0.32);*/
+    z-index: 100;
+
+
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    /*    color: rgba(255, 255, 255, 0.7);*/
+    color: #ffffff;
+
+}
+
+.nav-links:hover,
+    {
+    text-decoration: none;
+    /*    color: rgba(255, 255, 255, 0.7);*/
+
+}
+
+.active {
+    display: block;
+    padding-bottom: 10vw;
+    margin-top: 23vw;
+    background-color: #000000;
+    width: 100%;
+    height: 30vw;
+    padding: 5vw;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.main-nav li {
+    text-align: center;
+    margin: 0 auto;
+    margin: 1vw 0vw;
+
+}
+
+.logo-mobile {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 10px;
+    float: left;
+}
+
+.logo-mobile img {
+    width: 50px;
+}
+
+.logo img {
+    display: none;
+}
+
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        float: none;
+        display: block;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-54%);
+
+
+    }
+
+    .main-nav li {
+        margin: 0;
+
+    }
+
+    .nav-links {
+        margin: 40px;
+        font-size: 10px;
+
+    }
+
+    .logo img {
+        margin: 0px 40px;
+        margin-top: 5px;
+        width: 50px;
+        display: block;
+
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+
+        text-decoration: underline;
+
+    }
+
+    .active {
+        display: inline-block;
+        padding-bottom: 0vw;
+        margin-top: 0vw;
+        background-color: #FFF8ED;
+        width: 100%;
+        height: 0vw;
+    }
+
+}
+
+
+/*--------------------FREDERIK RAW----------------*/
+
+
+.raw-header {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+
+}
+
+.raw-header h1 {
+    font-family: 'CRACKERS BRUSHER';
+    font-weight: 100;
+    margin-bottom: -10px;
+}
+
+.raw-header-text {
+    color: #989898;
+    font-family: 'Kiona';
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+
+    padding: 0px 29px;
+
+}
+
+
+.raw p {
+    color: #989898;
+    font-family: 'Kiona';
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+
+    padding: 0px 29px;
+
+}
+
+.raw-name {
+    color: #9AADD8;
+    font-size: 40px;
+    padding-top: 5px;
+
+}
+
+.raw-name h2 {
+    font-family: 'CRACKERS BRUSHER';
+    font-weight: 100;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+.raw-dolly {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.raw-dolly img {
+    width: 100%
+}
+
+.raw-text {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin-bottom: 10vw;
+}
+
+
+
+.raw-wearing p {
+    text-align: center;
+    font-family: 'King';
+    font-size: 25px;
+    padding-top: 20px;
+    margin-bottom: -15px;
+}
+
+.raw-wearing-style {
+    color: #326288;
+    font-size: 18px;
+    font-family: 'King';
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.raw-wearing-material {
+    color: #8E9498;
+    font-size: 10px;
+    font-family: 'King';
+    text-align: center;
+    margin-top: -15px;
+
+}
+
+
+
+
+.raw-five-video video {
+    width: 100%;
+
+
+}
+
+.raw-five-header {
+    font-size: 28px;
+    color: #d7e1e8;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: -40px;
+
+}
+
+.raw-five-header h1 {
+    font-family: 'CRACKERS BRUSHER';
+    font-weight: 100;
+
+}
+
+
+.raw-five-description {
+
+    font-family: 'King';
+    font-size: 10px;
+    color: #D7DEDE;
+    padding: 150px 20px;
+
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .raw-header {
+
+        font-size: 65px;
+        padding-top: 70px;
+        padding-bottom: 0px;
+
+    }
+
+    .raw-header h1 {
+        margin-bottom: -50px;
+    }
+
+    .raw-header-text {
+        font-size: 14px;
+
+        padding: 0px 77px;
+        margin-bottom: 5vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+
+    }
+
+
+
+
+    /*--------------------BONDE----------------*/
+    .raw-one {
+        display: flex;
+
+    }
+
+    .raw-one .raw-name {
+
+
+        font-size: 50px;
+
+    }
+
+    .raw-one .raw-name h2 {
+
+        margin-bottom: 15px;
+        padding-left: 3vw;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .raw-two .raw-name h2 {
+
+        margin-bottom: 15px;
+        padding-right: 3vw;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .raw-three .raw-name h2 {
+
+        margin-bottom: 15px;
+        padding-left: 3vw;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .raw-four .raw-name h2 {
+
+        margin-bottom: 15px;
+        padding-right: 3vw;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .raw-one-text p {
+        font-size: 13px;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+
+    .raw-wearing p {
+        text-align: left;
+        font-family: 'King';
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: -15px;
+        padding-left: 30px;
+    }
+
+    .raw-wearing-style {
+        font-size: 10px;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .raw-wearing-material {
+        font-size: 8px;
+        text-align: left;
+        margin-top: -15px;
+        padding-left: 40px;
+
+    }
+
+    /*--------------------NAOMI----------------*/
+
+    .raw-two {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .raw-two .raw-name {
+
+        font-size: 50px;
+
+    }
+
+    .raw-two-text p {
+        font-size: 13px;
+        padding-top: 10px;
+        text-align: right;
+    }
+
+    .raw-two .raw-wearing p {
+        text-align: right;
+        font-family: 'King';
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: -15px;
+        padding-left: 30px;
+    }
+
+    .raw-two .raw-wearing-style {
+        font-size: 10px;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .raw-two .raw-wearing-material {
+        font-size: 8px;
+        text-align: right;
+        margin-top: -15px;
+        padding-right: 40px;
+
+    }
+
+    /*--------------------LAUGE----------------*/
+
+    .raw-three {
+        display: flex;
+
+    }
+
+    .raw-three .raw-name {
+
+        font-size: 50px;
+
+    }
+
+    .raw-three-text p {
+        font-size: 13px;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    /*--------------------EMIL----------------*/
+
+    .raw-four {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .raw-four .raw-name {
+
+        font-size: 50px;
+
+
+    }
+
+    .raw-four-text p {
+        font-size: 13px;
+        padding-top: 10px;
+        text-align: right;
+
+    }
+
+    .raw-four .raw-wearing p {
+        text-align: right;
+        font-family: 'King';
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: -15px;
+        padding-left: 30px;
+    }
+
+    .raw-four .raw-wearing-style {
+        font-size: 10px;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .raw-four .raw-wearing-material {
+        font-size: 8px;
+        text-align: right;
+        margin-top: -15px;
+        padding-right: 40px;
+
+    }
+
+
+    .raw-text {
+        flex-basis: 100px;
+    }
+
+    .raw-dolly {
+        flex-basis: 100px;
+    }
+
+
+    /*--------------------RAW KAMPAGNE VIDEO Media Query----------------*/
+
+    .raw-five-header {
+        font-size: 58px;
+
+
+        padding-top: 80px;
+        margin-bottom: -100px;
+
+    }
+
+    .raw-five-header h1 {
+        font-family: 'CRACKERS BRUSHER';
+        font-weight: 100;
+
+    }
+
+
+    .raw-five-description {
+
+        font-family: 'King';
+        font-size: 10px;
+        color: #D7DEDE;
+        padding: 150px 20px;
+
+        text-align: center;
+    }
+
+}
+
+
+
+/*--------------------FOOTER----------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'King';
+    font-size: 10px;
+    text-align: center;
+    color: #868686;
+    padding-bottom: 15px;
+
+}
+
+.footerline hr {
+    border: 1px solid #868686;
+
+}
+
+.phone-number {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.some {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.some-icons img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px;
+    opacity: 0.6;
+    transition: 0.2s;
+
+}
+
+.some-icons img:hover {
+
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+.email {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*------------FOOTER Media Querry Tablet----------*/
+
+@media screen and (min-width:541px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family: 'King';
+        font-size: 10px;
+        text-align: center;
+        color: #868686;
+        padding-bottom: 15px;
+
+    }
+
+    .phone-number {
+        flex-basis: 100px;
+    }
+
+    .some {
+        flex-basis: 100px;
+    }
+
+    .email {
+        flex-basis: 100px;
+    }
+}
+
+/*------------FOOTER Media Querry Tablet----------*/
+
+@media screen and (min-width:1280px) {
+
+
+    .phone-number {
+        flex-basis: 100px;
+    }
+
+    .some {
+        flex-basis: 100px;
+    }
+
+    .email {
+        flex-basis: 100px;
+    }
+}
