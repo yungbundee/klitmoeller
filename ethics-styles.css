@@ -6,6 +6,7 @@ body {
     transition: 1s all;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
      cursor: pointer;
+
 }
 
 
@@ -626,6 +627,7 @@ a:before {
 .ethics {
     margin-top: 0;
 
+max-height: 310vw;
 
 }
 
@@ -683,6 +685,7 @@ a:before {
     background-size: cover;
     padding: 3vw;
     height: 100vw;
+    margin-top: 40vw;
 }
 
 .second-ethics {
@@ -691,6 +694,7 @@ a:before {
     background-size: cover;
     padding: 3vw;
     height: 100vw;
+    margin-top: 90vw;
 }
 
 .third-ethics {
@@ -701,6 +705,7 @@ a:before {
     background-size: cover;
     padding: 3vw;
     height: 100vw;
+    margin-top: 240vw;
 }
 
 .ethics-icon {
@@ -720,7 +725,7 @@ a:before {
     .ethics {
         position: relative;
 
-
+max-height: 92vw;
 
 
     }
