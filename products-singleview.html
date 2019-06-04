@@ -20,7 +20,7 @@
         <ul class="main-nav" id="js-menu">
 
             <li>
-                <a href="shop.html" class="nav-links ">shop.</a>
+                <a href="shop.html" class="nav-links">shop.</a>
             </li>
 
             <li>
@@ -48,45 +48,91 @@
 
 
 
-
 <body>
     <div id="singleview">
         <div id="tilbage"><button>
-                <p>
+                <p>back
                 </p>
             </button> </div>
         <div id="indhold">
         </div>
 
+        <div class="similar_header">
+            <h5>similar products.</h5>
+        </div>
 
+        <div id="similar">
 
-        <div id="similarproducts">
-            <p>similar products.</p>
-
-            <div class="similar"></div>
         </div>
 
 
     </div>
+
+     <!-----------------Footer Section----------->
+
+    <div class="footerline">
+        <hr>
+    </div>
+    <footer>
+
+
+        <div class="phone-number">
+
+            <p>call us. <br>
+                +45 53 50 40 62</p>
+        </div>
+
+        <div class="some">
+            <p>follow us.</p>
+
+            <div class="some-icons">
+               <img src="img/facebookgray.svg" alt="facebook-icon">
+                <img src="img/instagramgray.svg" alt="instagram-icon">
+
+            </div>
+        </div>
+
+        <div class="email">
+            <p>get in contact. <br>
+                contact@kmcollective.dk</p>
+
+        </div>
+    </footer>
 
     <script>
         let urlParams = new URLSearchParams(window.location.search);
         let id = urlParams.get("id");
 
         let product;
-        let similarProduct;
+        let products;
+        let counter = 3;
+
 
 
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
             let dest = document.querySelector("#products");
+            let destSimilar = document.querySelector("#similar");
+
             let temp = document.querySelector("template");
 
             async function getJson() {
                 let jsonData = await fetch("http://naomitangoe.dk/kea/klitmoellercollective_WP/wordpress_KMC/wp-json/wp/v2/product/" + id);
+                product = await jsonData.json();
+                console.log(product);
 
                 åbn();
+
+
+            }
+
+            async function getJsonSimilar() {
+                let jsonData = await fetch("http://naomitangoe.dk/kea/klitmoellercollective_WP/wordpress_KMC/wp-json/wp/v2/product/?per_page=100");
+                products = await jsonData.json();
+                console.log(products);
+                åbnsimilar();
+
 
             }
 
@@ -108,12 +154,52 @@
 </article>
 <article class="products_addtocart"><h4>add to cart</h4></article>
 
+
         </article>
+
+
                     </article>`;
 
-
+                similar();
 
             }
+
+            function similar() {
+
+                let category = product.main_category[0];
+                console.log(product.main_category);
+
+
+                getJsonSimilar();
+
+            }
+
+            function åbnsimilar() {
+                let i = 1;
+                let template = "";
+                products.forEach(eachProduct => {
+                    console.log(eachProduct.main_category);
+
+                    if (product.main_category[0] == eachProduct.main_category[0]) {
+                        if (i <= counter) {
+
+                            template +=
+                                `
+<article class="similar">
+<img class="similarbillede" src = "${eachProduct.product_picture[0].guid}">
+       <article class="similar_info">         <p>${eachProduct.product_price} </p>
+                <h3>${eachProduct.product_name}</h3></article></article>`;
+
+
+                            i++;
+                        }
+
+                    }
+
+                });
+                document.querySelector("#similar").innerHTML = template;
+            }
+
 
             document.querySelector("#tilbage button").addEventListener("click", () => {
                 location.href = "shop.html"

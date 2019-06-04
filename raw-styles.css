@@ -12,6 +12,23 @@ a {
     font-family: 'King';
 }
 
+a:hover {
+    color: #e5e5e5;
+
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #989898;
+    visibility: hidden;
+
+}
+
 .hidden {
     display: none;
 }
@@ -175,7 +192,7 @@ a {
 
     .nav-links {
         margin: 40px;
-        font-size: 10px;
+        font-size: 0.8vw;
 
     }
 
@@ -199,6 +216,7 @@ a {
     .nav-links:hover {
 
         text-decoration: underline;
+         color: #727272;
 
     }
 
@@ -272,6 +290,10 @@ a {
 .raw-dolly {
     flex-grow: 1;
     flex-basis: 200px;
+}
+
+.raw-dolly video {
+    max-width: 100%;
 }
 
 .raw-dolly img {
@@ -351,13 +373,14 @@ a {
 
 
 
+
 @media screen and (min-width: 768px) {
 
     .raw-header {
 
         font-size: 65px;
-        padding-top: 70px;
-        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 20px;
 
     }
 

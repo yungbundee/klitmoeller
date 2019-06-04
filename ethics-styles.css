@@ -3,8 +3,11 @@ body {
     padding: 0px;
 
     background-color: #BEB4A5;
-
+    transition: 1s all;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     cursor: pointer;
 }
+
 
 a {
     position: relative;
@@ -34,18 +37,10 @@ a:before {
     left: 0;
     background-color: #989898;
     visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 
 }
+
+
 
 .hidden {
     display: none;
@@ -132,7 +127,7 @@ a:hover:before {
 .logo {
     text-decoration: none;
     /*    color: rgba(255, 255, 255, 0.7);*/
-    color: #989898;
+    color: #ffffff;
 
 }
 
@@ -212,7 +207,8 @@ a:hover:before {
 
     .nav-links {
         margin: 40px;
-        font-size: 10px;
+       font-size: 0.8vw;
+
 
     }
 
@@ -274,6 +270,18 @@ a:hover:before {
         letter-spacing: 3px;
         padding-top: 80px;
     }
+
+    .changeColorBlue {
+    background: #91aabf;
+
+}
+
+
+
+.changeColorBrown {
+    background: #BEB4A5;
+}
+
 }
 
 
@@ -312,10 +320,11 @@ a:hover:before {
     background-image: url("img/Havskud_lys.jpg");
     height: 55vw;
     /* parallax effect */
-    background-attachment: fixed;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
@@ -348,7 +357,8 @@ a:hover:before {
 
 #about {
 
-    background-color: #e8e5db;
+
+    margin-top: -3vw;
 
 }
 
@@ -380,6 +390,8 @@ a:hover:before {
 
 }
 
+
+
 .about-first-tagline {
 
     color: #9CA5A5;
@@ -390,7 +402,7 @@ a:hover:before {
     background-color: rgba(0, 0, 0, 0.65);
     width: 60%;
     position: absolute;
-    bottom: 8vw;
+    bottom: 20vw;
     left: 0vw;
 }
 
@@ -405,6 +417,21 @@ a:hover:before {
 
 }
 
+.about-first-bg {
+    padding-top: 0vw;
+    position: relative;
+}
+
+.about-second-bg {
+    padding-top: 30vw;
+    position: relative;
+}
+
+.second-header-about {
+    display: none;
+
+}
+
 .about-second-description {
     color: #FFF9F9;
     font-family: 'King';
@@ -415,8 +442,22 @@ a:hover:before {
     margin-bottom: 1vw;
 }
 
+.about-second-tagline {
+    color: rgb(156, 165, 165);
+    font-family: 'King';
+    font-size: 2.4vw;
+    font-weight: lighter;
+    background-color: rgba(77, 77, 77, 0.73);
+    width: 42%;
+    position: absolute;
+    top: 55.5vw;
+    left: 57.9%;
+    padding: 0vw 0vw;
+}
+
 .about-first-pic {
     margin: 2vw 7vw;
+
 }
 
 
@@ -426,6 +467,524 @@ a:hover:before {
 
 }
 
+
+/*----------------ABOUT SECTION Media Query-------------------*/
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .header-about {
+        position: absolute;
+        color: #FFF9F9;
+        font-family: 'Kiona';
+        font-size: 3vw;
+        text-align: center;
+        letter-spacing: 0.5vw;
+        top: -12.4%;
+        left: 33%;
+        z-index: 5;
+
+
+    }
+
+    .about {
+
+        background-color: rgba(212, 202, 188, 0);
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0vw;
+        height: 70vw;
+        margin-top: -3vw;
+
+
+    }
+
+    .about-first-bg {
+        background-color: #D4CABC;
+        position: relative;
+        height: 40vw;
+        width: 65vw;
+        left: 3%;
+        top: -10%;
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-first-pic {
+        margin: -3vw 7vw;
+        position: absolute;
+
+        overflow: hidden;
+        width: 90%;
+        height: 40vw;
+        left: -8%;
+        top: -15.6%;
+
+        margin: 3vw;
+
+    }
+
+    .about-first-pic img {
+
+        position: absolute;
+        width: 70%;
+        overflow: hidden;
+        height: 50vw;
+
+    }
+
+    .about-first-tagline {
+        font-size: 0.7vw;
+        padding-left: 2vw;
+        background-color: rgba(0, 0, 0, 0.65);
+        width: 47%;
+        left: 50%;
+        bottom: 37%;
+    }
+
+    .about-first-description {
+        flex-basis: 200px;
+        font-size: 1vw;
+        line-height: 2vw;
+        margin: 0vw;
+        padding: 26vw 1vw 10vw 40vw;
+    }
+
+
+
+    /*----------------ABOUT 2 SECTION-------------------*/
+
+    .about-second-bg {
+        padding-top: 0vw;
+        background-color: #afcae0;
+        position: relative;
+        top: 20%;
+        left: 10%;
+        height: 45vw;
+        width: 70vw;
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .second-header-about {
+        position: absolute;
+        color: #FFF9F9;
+        font-family: 'Kiona';
+        font-size: 3vw;
+        text-align: left;
+        letter-spacing: 0.5vw;
+        top: -2.4%;
+        left: 2%;
+        z-index: 6;
+        display: block;
+
+    }
+
+    .about-second-description {
+        color: #FFF9F9;
+        font-family: 'King';
+        font-size: 1vw;
+        line-height: 2vw;
+        position: absolute;
+        top: 50%;
+        left: -6%;
+
+    }
+
+    .about-second-pic {
+        position: absolute;
+        top: -7%;
+        left: 14%;
+
+        width: 90%;
+    }
+
+    .about-second-tagline {
+        background-color: rgba(0, 0, 0, 0.65);
+        font-family: 'King';
+        font-size: 0.7vw;
+        font-weight: lighter;
+
+        width: 32%;
+        position: absolute;
+        top: 20vw;
+        left: 0%;
+        padding: 0vw 3vw;
+    }
+
+}
+
+
+
+
+
+/*------------Ethics----------*/
+
+
+.ethics {
+    margin-top: 0;
+
+
+}
+
+.header-ethics {
+    font-family: 'kiona';
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    font-weight: 100;
+
+}
+
+.first-ethics-img {
+    display: none;
+}
+.second-ethics-img {
+    display: none;
+}
+.third-ethics-img {
+    display: none;
+}
+
+.header-ethics h2 {
+    font-weight: lighter;
+}
+
+.description-ethics {
+    font-family: 'king';
+    font-size: 2vw;
+    color: white;
+    margin: 7vw;
+    line-height: 4vw;
+}
+
+
+
+.ethics-header {
+    font-family: 'king';
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+}
+
+.ethics-text {
+    font-family: 'king';
+    font-size: 3vw;
+    color: white;
+    line-height: 5vw;
+    margin: 0vw 7vw;
+}
+
+.first-ethics {
+    background-image: url(img/wool.jpg);
+    background-size: cover;
+    padding: 3vw;
+    height: 100vw;
+}
+
+.second-ethics {
+    margin-top: 8vw;
+    background-image: url(img/factory2.jpg);
+    background-size: cover;
+    padding: 3vw;
+    height: 100vw;
+}
+
+.third-ethics {
+    top: 0;
+    left: 0;
+    margin-top: 8vw;
+    background-image: url(img/paperbag2.png);
+    background-size: cover;
+    padding: 3vw;
+    height: 100vw;
+}
+
+.ethics-icon {
+
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+
+/*---------------Ethics SECTION Media Query-------------------*/
+
+@media screen and (min-width:768px) {
+    .ethics {
+        position: relative;
+
+
+
+
+    }
+
+    /*---------------Ethics Intro-------------------*/
+
+    .header-ethics {
+        font-family: 'kiona';
+        font-size: 3vw;
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        margin-bottom: -5vw;
+
+    }
+
+       .description-ethics {
+        font-family: 'king';
+        font-size: 1vw;
+        color: white;
+        margin: 7vw;
+        line-height: 2vw;
+        text-align: center;
+    }
+
+    /*---------------Materials-------------------*/
+
+    .first-ethics {
+        position: relative;
+        top: -30%;
+        left: 45%;
+        background-image: none;
+        background-size: auto;
+        padding: 0vw;
+        height: 50vw;
+        width: 30vw;
+        margin-top: 15vw;
+
+
+
+    }
+
+    .first-ethics-bg {
+        position: relative;
+        top: -5%;
+        left: 10%;
+        background-image: none;
+        background-size: auto;
+        padding: 0vw;
+        height: 35vw;
+        width: 30vw;
+        background: rgba(66, 84, 97, 0.6);
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .first-ethics-img {
+        display: block;
+        position: absolute;
+        width: 200%;
+        top: 5%;
+        left: -139%;
+       z-index: -1;
+    }
+
+
+
+    .first-ethics .ethics-icon {
+        width: 10vw;
+        position: absolute;
+        top: -2%;
+        left: 45%;
+    }
+
+.first-ethics .ethics-header {
+        position: absolute;
+    top: 13%;
+    left: 8%;
+        font-size: 1.4vw;
+    width: 30vw;
+
+
+
+    }
+
+       .first-ethics .ethics-text {
+           position: absolute;
+        font-size: 1vw;
+        line-height: 2vw;
+        text-align: left;
+           top: 20%;
+           left: 20%;
+            margin: 0vw 0vw;
+
+    }
+
+
+ /*---------------Production-------------------*/
+
+     .second-ethics {
+        position: relative;
+        top: -30%;
+        left: 45%;
+        background-image: none;
+        background-size: auto;
+        padding: 0vw;
+        height: 50vw;
+        width: 30vw;
+         margin-top: 20vw;
+
+
+    }
+
+    .second-ethics-bg {
+        position: relative;
+        top: -5%;
+        left: -90%;
+        padding: 0vw;
+        height: 35vw;
+        width: 30vw;
+        background: rgba(97, 124, 144, 0.6);
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .second-ethics-img {
+        display: block;
+        position: absolute;
+        width: 200%;
+        top: 5%;
+        left: -35%;
+       z-index: -1;
+    }
+
+
+
+    .second-ethics .ethics-icon {
+        width: 10vw;
+        position: absolute;
+        top: -4%;
+        left: -55%;
+    }
+
+.second-ethics .ethics-header {
+        position: absolute;
+    top: 11%;
+    left: -90%;
+        font-size: 1.4vw;
+    width: 30vw;
+
+
+
+    }
+
+       .second-ethics .ethics-text {
+           position: absolute;
+        font-size: 1vw;
+        line-height: 2vw;
+        text-align: left;
+           top: 19%;
+           left: -80%;
+            margin: 0vw 30vw 0vw 0vw;
+
+    }
+
+
+    /*---------------Packaging-------------------*/
+
+     .third-ethics {
+        position: relative;
+        top: -30%;
+        left: 45%;
+        background-image: none;
+        background-size: auto;
+        padding: 0vw;
+        height: 50vw;
+        width: 30vw;
+         margin-top: 70vw;
+
+
+
+    }
+
+    .third-ethics-bg {
+        position: relative;
+        top: -2%;
+        left: 22%;
+        background-image: none;
+        background-size: auto;
+        padding: 0vw;
+        height: 35vw;
+        width: 30vw;
+        background: rgba(175, 201, 222, 0.6);
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .third-ethics-img {
+        display: block;
+        position: absolute;
+        width: 150%;
+        top: -35%;
+        left: -120%;
+       z-index: -2;
+    }
+
+
+
+    .third-ethics .ethics-icon {
+        width: 10vw;
+        position: absolute;
+        top: -2%;
+        left: 55%;
+    }
+
+.third-ethics .ethics-header {
+        position: absolute;
+    top: 15%;
+    left: 22%;
+        font-size: 1.4vw;
+    width: 30vw;
+
+
+
+    }
+
+       .third-ethics .ethics-text {
+           position: absolute;
+        font-size: 1vw;
+        line-height: 2vw;
+        text-align: left;
+           top: 23%;
+           left: 29%;
+            margin: 0vw -5vw 0vw 0vw;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    hr {
+        margin-top: 25vw;
+        border-top: rgba(255, 255, 255, 0);
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .splash-ocean {
+
+        /* parallax effect */
+        background-attachment: fixed;
+
+
+    }
+
+}
 
 
 
@@ -483,9 +1042,15 @@ footer {
     color: white;
 }
 
+
+
+
 /*------------FOOTER Media Querry Tablet----------*/
 
+
+
 @media screen and (min-width:541px) {
+
     footer {
         display: flex;
         flex-wrap: wrap;
@@ -509,15 +1074,19 @@ footer {
     .email {
         flex-basis: 100px;
     }
+
 }
+
+
+
 
 /*------------FOOTER Media Querry Tablet----------*/
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:768px) {
 
     .footerline hr {
 
-        padding-top: 1000px;
+        padding-top: 150vw;
         margin-left: -5px;
 
     }
@@ -535,276 +1104,4 @@ footer {
     }
 }
 
-.header-ethics {
-    font-family: 'kiona';
-    font-size: 5vw;
-    color: white;
-    text-align: center;
 
-}
-
-.description-ethics {
-    font-family: 'king';
-    font-size: 2vw;
-    color: white;
-    margin: 7vw;
-    line-height: 4vw;
-}
-
-.about-second-tagline {
-    color: rgb(156, 165, 165);
-    font-family: 'King';
-    font-size: 2.4vw;
-    font-weight: lighter;
-    background-color: rgba(77, 77, 77, 0.73);
-    width: 42%;
-    position: absolute;
-    top: 230.5vw;
-    right: 0vw;
-    padding: 0vw 3vw;
-}
-
-.ethics-header {
-    font-family: 'king';
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-}
-
-.ethics-text {
-    font-family: 'king';
-    font-size: 3vw;
-    color: white;
-    line-height: 5vw;
-    margin: 0vw 7vw;
-}
-
-.first-ethics {
-    background-image: url(img/wool.jpg);
-    background-size: cover;
-    padding: 3vw;
-    height: 100vw;
-}
-
-.second-ethics {
-    margin-top: 8vw;
-    background-image: url(img/factory2.jpg);
-    background-size: cover;
-    padding: 3vw;
-    height: 100vw;
-}
-
-.third-ethics {
-    top: 0;
-    left: 0;
-    margin-top: 8vw;
-    background-image: url(img/paperbag2.png);
-    background-size: cover;
-    padding: 3vw;
-    height: 100vw;
-}
-
-.ethics-icon {
-
-    width: 20vw;
-    margin-left: auto;
-    margin-right: auto;
-
-
-
-}
-
-.about-first-bg {
-    padding-top: 0vw;
-}
-
-.ethics {
-    margin-top: 0;
-
-}
-
-@media screen and (min-width: 768px) {
-
-
-    hr {
-        margin-top: 6vw;
-    }
-
-    .header-about {
-
-        color: #FFF9F9;
-        font-family: 'Kiona';
-        font-size: 6vw;
-        text-align: center;
-        letter-spacing: 0.5vw;
-
-
-    }
-
-    .about {
-
-        background-color: #D4CABC;
-        width: 80%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 4vw;
-        margin-bottom: 2vw;
-        margin-top: -10vw;
-
-
-    }
-
-    .about-first-bg {
-        padding-top: 0vw;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding: 0vw;
-    }
-
-    .about-first-pic {
-        flex-basis: 300px;
-        margin: 3vw;
-    }
-
-
-    .about-first-description {
-        flex-basis: 200px;
-        font-size: 1.2vw;
-        line-height: 2vw;
-        margin: 0vw;
-        padding: 48vw 0vw 10vw;
-    }
-
-    .about-first-tagline {
-        font-size: 1.5vw;
-        padding-left: 2vw;
-        background-color: rgba(0, 0, 0, 0.65);
-        width: 43.2%;
-        left: 44vw;
-        bottom: -7vw;
-    }
-
-
-    .about-second-description {
-
-        color: #FFF9F9;
-        font-family: 'King';
-        font-size: 1.4vw;
-        font-weight: lighter;
-        margin: 0vw 7vw;
-        line-height: 2vw;
-    }
-
-
-    .about-second-pic {
-
-        width: 90%;
-        margin-left: 7.5vw;
-
-
-    }
-
-    .about-second-tagline {
-        font-size: 2vw;
-        font-weight: lighter;
-        width: 25.8%;
-        position: absolute;
-        top: 160.5vw;
-        right: 58.6vw;
-        text-align: right;
-        padding-right: 1.4vw;
-    }
-
-
-}
-
-@media screen and (min-width: 1024px) {
-
-
-
-
-    .header-about {
-        color: #FFF9F9;
-        font-family: 'Kiona';
-        font-size: 4vw;
-        text-align: center;
-        letter-spacing: 0.5vw;
-    }
-
-    .about {
-        background-color: #D4CABC;
-        width: 80%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 4vw;
-        margin-bottom: 2vw;
-        margin-top: -10vw;
-    }
-
-    .about-first-bg {
-        padding-top: 0vw;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding: 0vw;
-    }
-
-    .about-first-pic {
-        flex-basis: 300px;
-        margin: 3vw;
-    }
-
-
-    .about-first-description {
-        flex-basis: 200px;
-        font-size: 1.2vw;
-        line-height: 2vw;
-        margin: 0vw;
-        padding: 48vw 0vw 10vw;
-    }
-
-    .about-first-tagline {
-
-        font-size: 1.5vw;
-        padding-left: 2vw;
-        background-color: rgba(0, 0, 0, 0.65);
-        width: 44%;
-        left: 44vw;
-        bottom: -25vw;
-    }
-
-
-    .about-second-description {
-        color: #FFF9F9;
-        font-family: 'King';
-        font-size: 1.4vw;
-        font-weight: lighter;
-        margin: 0vw 7vw;
-        line-height: 2vw;
-    }
-
-
-    .about-second-pic {
-
-        width: 90%;
-        margin-left: 7.5vw;
-
-
-    }
-
-    .about-second-tagline {
-        font-size: 2vw;
-        font-weight: lighter;
-        width: 30%;
-        position: absolute;
-        top: 176.5vw;
-        right: 58.6vw;
-        text-align: right;
-        padding-right: 1.4vw;
-    }
-
-
-}

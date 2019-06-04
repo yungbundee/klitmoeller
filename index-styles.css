@@ -102,7 +102,7 @@ a:hover {
 .nav-colored {
 
     transition: .4s;
-    /*    background: rgba(255, 243, 222, 0.32);*/
+        background: rgba(255, 243, 222, 0.32);
     z-index: 100;
 
 
@@ -202,7 +202,7 @@ a:hover {
 
     .nav-links {
         margin: 40px;
-        font-size: 10px;
+        font-size: 0.8vw;
 
     }
 
@@ -262,6 +262,13 @@ a:hover {
         font-size: 10px;
         letter-spacing: 3px;
         padding-top: 80px;
+    }
+
+        .header-text h1 {
+        color: rgba(152, 152, 152, 0.63);
+
+        font-weight: bold;
+
     }
 }
 
@@ -523,7 +530,7 @@ a:hover {
 
 .main-second {
     position: relative;
-    padding-top: 600vw;
+    padding-top: 450vw;
 }
 
 .second-bg {
@@ -608,7 +615,7 @@ a:hover {
 
 .second-tagline {
     position: absolute;
-    top: 74%;
+    top: 88.7%;
     left: 16.5%;
     height: 10vw;
     width: 56vw;
@@ -632,7 +639,7 @@ a:hover {
 
     .second-bg {
         width: 73vw;
-        height: 140vw;
+        height: 143vw;
         top: 30%;
         margin: 0px 13vw;
     }
@@ -768,12 +775,14 @@ a:hover {
 
 .main-third {
     position: relative;
-    padding-top: 12vw;
+   top: 0%;
+
 }
 
 .third-video {
     position: absolute;
-    top: -150%;
+    top: 0%;
+
 
 }
 
@@ -785,40 +794,48 @@ a:hover {
 
 .third-header {
     position: absolute;
-    top: -220%;
-    left: 4%;
-    font-size: 28px;
+    bottom: 3%;
+    left: 8%;
+    font-size: 7vw;
     color: #d7e1e8;
+    z-index: 2;
 
 }
 
 .third-header h1 {
     font-family: 'CRACKERS BRUSHER';
     font-weight: 100;
+    margin: 0;
 
 }
 
 
 .third-description {
     position: absolute;
-    top: 35%;
-    left: 10%;
-    height: 40px;
-    width: 250px;
-
+    margin-top:75vw;
+    left: 20%;
     font-family: 'King';
-    font-size: 10px;
+    font-size: 2.5vw;
     color: #D7DEDE;
-    padding: 5px 20px;
+
     text-align: center;
 }
 
+.third-description a {
+padding-top: 5vw;
+    font-family: 'King';
+
+    color: #D7DEDE;
+
+text-decoration: underline;
+    text-align: center;
+}
 
 /*---------RAW Media Querry Tablet------------*/
 
 @media screen and (min-width:541px) {
     .main-third {
-        padding-top: 150px;
+        padding-top: 25vw;
     }
 
     .third-video {
@@ -829,86 +846,60 @@ a:hover {
     .third-header {
         top: -460%;
         left: 7%;
-        font-size: 38px;
+        font-size: 7vw;
         z-index: 5;
+        height:15vw;
 
     }
 
     .third-description {
-        top: -60%;
-        left: 14%;
-        height: 40px;
-        width: 350px;
-        font-size: 12px;
-        padding: 5px 20px;
+        top: -400%;
+        left: 27%;
+        font-size: 2vw;
+
     }
 
 
 }
 
-/*---------RAW Media Querry Desktop Small------------*/
+
+/*---------RAW Media Querry Desktop------------*/
 
 @media screen and (min-width:768px) {
     .main-third {
-        padding-top: 350px;
+        padding-top: 45vw;
     }
 
     .third-video {
         top: -90%;
+        left: 14vw;
+
+    }
+
+    .third-video video {
+        width: 85%;
+
+/*      margin-left: -1.3vw;*/
 
     }
 
     .third-header {
-        top: -125%;
-        left: 20%;
-        font-size: 38px;
-        z-index: 5;
+        top: -111%;
+        left: 21%;
+        font-size: 5vw;
+        z-index: 999;
 
     }
 
     .third-description {
-        top: 60%;
-        left: 25%;
-        height: 40px;
-        width: 350px;
-        font-size: 12px;
-        padding: 5px 20px;
+        top: -130%;
+        left: 40%;
+        font-size: 0.7vw;
     }
 
 
 }
 
-/*---------RAW Media Querry Desktop Large------------*/
-
-@media screen and (min-width:1280px) {
-    .main-third {
-        padding-top: 180px;
-    }
-
-    .third-video {
-        top: -90%;
-
-    }
-
-    .third-header {
-        top: -215%;
-        left: 23%;
-        font-size: 68px;
-        z-index: 5;
-
-    }
-
-    .third-description {
-        top: 500%;
-        left: 38%;
-        height: 40px;
-        width: 350px;
-        font-size: 12px;
-        padding: 5px 20px;
-    }
-
-
-}
 
 /*--------------------FOOTER----------------*/
 
@@ -920,12 +911,15 @@ footer {
     font-size: 10px;
     text-align: center;
     color: #868686;
-    padding-bottom: 15px;
+
+    padding-bottom:4vw;
 
 }
 
 .footerline hr {
     border: 1px solid #868686;
+    margin-top: 115vw;
+
 
 }
 
@@ -972,9 +966,16 @@ footer {
         font-size: 10px;
         text-align: center;
         color: #868686;
-        padding-bottom: 15px;
+        padding-bottom: 0vw;
+
 
     }
+
+    .footerline hr {
+    border: 1px solid #868686;
+    margin-top: -50vw;
+
+}
 
     .phone-number {
         flex-basis: 100px;
@@ -991,12 +992,15 @@ footer {
 
 /*------------FOOTER Media Querry Tablet----------*/
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:768px) {
 
     .footerline hr {
 
-        padding-top: 1000px;
-        margin-left: -5px;
+        padding-top: 40vw;
+        margin-left: -1vw;
+
+          border-top: rgba(0, 0, 0, 0);
+        padding-bottom:4vw;
 
     }
 

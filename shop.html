@@ -45,7 +45,7 @@
     </nav>
 
     <div class="header-text-shop">
-        <h1>products.</h1>
+        <h1>products</h1>
     </div>
 
 </header>
@@ -71,8 +71,35 @@
     </main>
 
 
+  <!-----------------Footer Section-------------->
+    <div class="footerline">
+        <hr>
+    </div>
+    <footer>
 
-    <footer></footer>
+
+        <div class="phone-number">
+
+            <p>call us. <br>
+                +45 53 50 40 62</p>
+        </div>
+
+        <div class="some">
+            <p>follow us.</p>
+
+            <div class="some-icons">
+                <img src="img/facebookgray.svg" alt="facebook-icon">
+                <img src="img/instagramgray.svg" alt="instagram-icon">
+
+            </div>
+        </div>
+
+        <div class="email">
+            <p>get in contact. <br>
+                contact@kmcollective.dk</p>
+
+        </div>
+    </footer>
 
 
     <script>
@@ -105,8 +132,8 @@
                         let template =
                             `<article class="products">
                 <img class="billede" src = "${eachProduct.product_picture[0].guid}">
-                <p>${eachProduct.product_price} </p>
-                <h3>${eachProduct.product_name}</h3>
+                <article class="products_header"><p>${eachProduct.product_price} </p>
+                <h3>${eachProduct.product_name}</h3></article>
 
 
                     </article>`;

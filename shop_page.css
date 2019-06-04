@@ -2,9 +2,10 @@ body {
     margin: 0px;
     padding: 0px;
 
-    background-color: #FFF8ED;
+    background-color: #ffffff;
     transition: 1s all;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    cursor: pointer;
 }
 
 img {
@@ -44,6 +45,103 @@ a:hover {
 
 
 
+
+/*--------------------FOOTER----------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'King';
+    font-size: 10px;
+    text-align: center;
+    color: #868686;
+    padding-bottom: 15px;
+
+}
+
+.footerline hr {
+    border: 1px solid #868686;
+
+}
+
+.phone-number {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.some {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.some-icons img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px;
+    opacity: 0.6;
+    transition: 0.2s;
+
+}
+
+.some-icons img:hover {
+
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+.email {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*------------FOOTER Media Querry Tablet----------*/
+
+@media screen and (min-width:541px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family: 'King';
+        font-size: 10px;
+        text-align: center;
+        color: #868686;
+        padding-bottom: 15px;
+
+    }
+
+    .phone-number {
+        flex-basis: 100px;
+    }
+
+    .some {
+        flex-basis: 100px;
+    }
+
+    .email {
+        flex-basis: 100px;
+    }
+}
+
+/*------------FOOTER Media Querry Tablet----------*/
+
+@media screen and (min-width:1280px) {
+
+
+    .phone-number {
+        flex-basis: 100px;
+    }
+
+    .some {
+        flex-basis: 100px;
+    }
+
+    .email {
+        flex-basis: 100px;
+    }
+}
 
 
 
@@ -110,7 +208,7 @@ a:hover {
 .active {
     display: block;
     margin-top: 20vw;
-    background-color: #FFF8ED;
+    background-color: #ffffff;
     width: 100%;
     height: 20vw;
 }
@@ -172,7 +270,7 @@ a:hover {
 
     .nav-links {
         margin: 40px;
-        font-size: 10px;
+        font-size: 0.8vw;
 
     }
 
@@ -260,6 +358,21 @@ a:hover {
 
 }
 
+ button:hover{
+
+     transition: .4s;
+
+
+        color: #000000;
+
+}
+
+.valgt {
+
+    border-bottom: 1px solid black;
+
+}
+
 img.billede {
 
     width: 100%;
@@ -271,16 +384,19 @@ img.billede {
 .header-text-shop {
 
     color: rgba(152, 152, 152, 0.63);
-    font-family: 'king';
+    font-family: 'kiona';
     text-align: center;
-    font-weight: lighter;
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 3px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-left: auto;
     padding-right: auto;
+    font-weight: bold;
 }
 
+.header-text-shop h1 {
+    font-weight: bold;
+}
 
 #products {
 
@@ -291,8 +407,9 @@ img.billede {
     margin: 2vw;
 
 
-    max-width: 1024px;
+    max-width: 924px;
     margin: auto;
+
 
 
 
@@ -302,21 +419,29 @@ img.billede {
 
 
     justify-content: space-around;
-    flex-basis: 150px;
-    padding: 2vw;
+    flex-basis: 170px;
+    padding: 0vw;
 
 
 }
 
+.products_header {
 
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2vw;
+    margin-top: -1vw;
+
+
+}
 
 #products p {
 
     font-family: 'Kiona';
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     font-weight: lighter;
     color: grey;
-    flex-basis: 10px;
+    flex-basis: 120px;
 
 
 }
@@ -324,10 +449,11 @@ img.billede {
 #products h3 {
 
     font-family: 'Kiona';
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     font-weight: lighter;
-    color: grey;
-    flex-basis: 10px;
+    color: #262525;
+    flex-basis: 250px;
+
 
 
 }
@@ -336,5 +462,84 @@ img.billede {
 
     text-align: center;
     margin-bottom: 5vw;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    #products {
+
+
+        margin: 2vw;
+        max-width: 1204px;
+        margin: auto;
+
+
+
+
+    }
+
+    .products {
+
+
+        justify-content: space-around;
+        flex-basis: 240px;
+        padding: 1vw;
+
+
+
+    }
+
+
+    .products_header {
+
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 2vw;
+        margin-top: -1vw;
+
+
+
+    }
+
+    #products p {
+
+        font-family: 'Kiona';
+        font-size: 1vw;
+        font-weight: lighter;
+
+        flex-basis: 130px;
+
+
+
+    }
+
+    #products h3 {
+
+        font-family: 'Kiona';
+        font-size: 1vw;
+        font-weight: lighter;
+
+        flex-basis: 170px;
+
+
+    }
+
+     .header-text-shop {
+        color: rgba(152, 152, 152, 0.63);
+        font-family: 'Kiona';
+        text-align: center;
+        font-weight:bold;
+        font-size: 10px;
+        letter-spacing: 3px;
+        padding-top: 80px;
+    }
+
+        .header-text-shop h1 {
+        color: rgba(152, 152, 152, 0.63);
+
+        font-weight: bold;
+
+    }
 
 }
