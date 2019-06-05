@@ -90,7 +90,7 @@ a:hover {
 
     font-size: 20px;
 
-
+height: 11vw;
 
     font-weight: 100;
 
@@ -99,14 +99,7 @@ a:hover {
 
 }
 
-.nav-colored {
 
-    transition: .4s;
-        background: rgba(255, 243, 222, 0.32);
-    z-index: 100;
-
-
-}
 
 .main-nav {
     list-style-type: none;
@@ -185,6 +178,7 @@ a:hover {
     .navbar {
         float: none;
         display: block;
+          height: 0vw;
     }
 
     .main-nav {
@@ -727,9 +721,9 @@ a:hover {
     }
 
     .second-header {
-        top: 27.5%;
-        left: 26%;
-        font-size: 6vw;
+        top: 29.5%;
+        left: 31%;
+        font-size: 4.5vw;
     }
 
     .second-keywords {
@@ -885,8 +879,8 @@ text-decoration: underline;
 
     .third-header {
         top: -111%;
-        left: 21%;
-        font-size: 5vw;
+        left: 22.5%;
+        font-size: 4.5vw;
         z-index: 999;
 
     }

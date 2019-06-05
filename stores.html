@@ -7,10 +7,13 @@
 
 
 
+
+
     <title>Klitmøller Collective</title>
 
     <link rel="stylesheet" href="stores-styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -66,170 +69,191 @@
         </div>
 
 
+
         <div class="store">
 
             <div class="store-first-bg">
-            <div class="store_header">
-                <h1>Where to find us</h1>
+                <div class="store_header">
+                    <h1><span style="color: white;">Where to </span> find us</h1>
+                </div>
+
+                <div class="store_pic">
+                    <img src="img/store_inside3.jpg" alt="klitmollerstore">
+                </div>
+
+                <div class="store_tagline">
+
+
+                    <p>Stop by our Klitmøller Collective store, in the heart of Klitmøller.</p>
+
+                </div>
+
+                <div class="store_text">
+
+                    <p>We are very proud of our local Klitmøller Collective store on the mainroad of Klitmøller. You will experience the passion and the lifestyle of our most beloved brand. A big part of Klitmøller Collective is the history within this authentic fishing village, where surfers and fishermen unite as the town we know today. Hopefully you will get a taste of that, if visting us in our store.</p>
+
+                </div>
             </div>
-
-            <div class="store_pic">
-                <img src="img/store_inside.jpg" alt="klitmollerstore">
-            </div>
-
-            <div class="store_tagline">
-
-
-                <p>Stop by our Klitmøller Collective store, in the heart of Klitmøller.</p>
-
-            </div>
-
-            <div class="store_text">
-
-                <p>We are very proud of our local Klitmøller Collective store on the mainroad of Klitmøller. You will experience the passion and the lifestyle of our most beloved brand. A big part of Klitmøller collective is the history within this authentic fishing village, where surfers and fishermen united as the town we know today. Hopefully you will get a taste of that, if viseting ud in our store.</p>
-
-            </div>
-</div>
 
         </div>
 
 
 
         <div class="retailer">
-            <div class="retailer_header">
-                retailers
+            <div class="store-second-bg" data-rellax-speed="3">
+
+                <div class="retailer_header">
+                    retailers
+                </div>
+                <div class="retailer_pic" data-rellax-speed="4">
+                    <img src="img/map.png" alt="klitmollerstore">
+                </div>
+                <div class="pic-bg" data-rellax-speed="1"></div>
+
+                <div class="retailer-text">
+
+                    <p>In addition to our Klitmøller Store we have approximately 130 retailers where you can buy our raw products. Use our store finder below to find a retailer near you!</p>
+
+                </div>
+
+                <div class="locator">
+
+                    <form class="navigator">
+                        <input type="text" name="search" placeholder="ENTER ZIPCODE OR ADRESS">
+
+                    </form>
+
+                    <form class="navigator">
+                        <input type="text" name="search" placeholder="SEARCH RADIUS">
+                    </form>
+
+                </div>
+
+                <button class="button" style="color:white;">
+                    search
+                </button>
+
+
             </div>
-
-            <div class="locator">
-
-                <form class="navigator">
-                    <input type="text" name="search" placeholder="ENTER ZIPCODE OR ADRESS">
-
-                </form>
-
-                <form class="navigator">
-                    <input type="text" name="search" placeholder="SEARCH RADIUS">
-                </form>
-
-            </div>
-
-            <button class="button">
-                <p>search</p>
-            </button>
 
             <div id="displayResult" class="hide">
+                <div id="stores-located">
+                    <div class="adress">
+                        <p>Project 4 <br>
+                            Larsbjørnsstræde 19, st., tv. København K 1454 <br>
+                            Denmark</p>
+                    </div>
 
-                <div class="adress">
-                    <p>Project 4 <br>
-                        Larsbjørnsstræde 19, st., tv. København K 1454 <br>
-                        Denmark</p>
-                </div>
+                    <div class="adress">
+                        <p>Flavour <br>
+                            Skindergade 19, st. <br>
+                            København K 1159 <br>
+                            Denmark</p>
+                    </div>
 
-                <div class="adress">
-                    <p>Flavour <br>
-                        Skindergade 19, st. <br>
-                        København K 1159 <br>
-                        Denmark</p>
-                </div>
+                    <div class="adress">
+                        <p>Labor <br>
+                            Elmegade 17 <br>
+                            København N 2200 <br>
+                            Denmark</p>
+                    </div>
 
-                <div class="adress">
-                    <p>Labor <br>
-                        Elmegade 17 <br>
-                        København N 2200 <br>
-                        Denmark</p>
-                </div>
+                    <div class="adress">
+                        <p>M.U.D. ApS <br>
+                            Østerbrogade 51B <br>
+                            København Ø 2100 <br>
+                            Denmark</p>
+                    </div>
 
-                <div class="adress">
-                    <p>M.U.D. ApS <br>
-                        Østerbrogade 51B <br>
-                        København Ø 2100 <br>
-                        Denmark</p>
-                </div>
+                    <div class="adress">
+                        <p>Å ApS <br>
+                            Østerbrogade 148 <br>
+                            København Ø 2100 <br>
+                            Denmark</p>
+                    </div>
 
-                <div class="adress">
-                    <p>Å ApS <br>
-                        Østerbrogade 148 <br>
-                        København Ø 2100 <br>
-                        Denmark</p>
-                </div>
-
-                <div class="adress">
-                    <p>Less Vegas <br>
-                        Strandvejen 114 <br>
-                        Hellerup 2900 <br>
-                        Denmark</p>
-                </div>
+                    <div class="adress">
+                        <p>Less Vegas <br>
+                            Strandvejen 114 <br>
+                            Hellerup 2900 <br>
+                            Denmark</p>
+                    </div>
 
 
-                <div class="adress">
-                    <p>Noe Living <br>
-                        Hovedgaden 45 <br>
-                        Birkerød 3460 <br>
-                        Denmark</p>
+                    <div class="adress">
+                        <p>Noe Living <br>
+                            Hovedgaden 45 <br>
+                            Birkerød 3460 <br>
+                            Denmark</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+
+
+
+            <!-----------------Footer Section-------------->
+            <div class="footerline">
+                <hr>
+            </div>
+            <footer>
+
+
+                <div class="phone-number">
+
+                    <p>call us. <br>
+                        +45 53 50 40 62</p>
+                </div>
+
+                <div class="some">
+                    <p>follow us.</p>
+
+                    <div class="some-icons">
+                          <a href="https://www.facebook.com/klitmollercollective/"><img src="img/facebook-white.png" alt="facebook-icon"></a>
+                <a href="https://www.instagram.com/klitmollercollective/"><img src="img/instagram.png" alt="instagram-icon"></a>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <p>get in contact. <br>
+                        contact@kmcollective.dk</p>
+
+                </div>
+            </footer>
+
+
+        </div>
     </main>
 
-    <!-----------------Footer Section-------------->
-    <div class="footerline">
-        <hr>
-    </div>
-    <footer>
+<script src="rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.store-first-bg');
+        var rellax = new Rellax('.retailer_pic');
+        var rellax = new Rellax('.pic-bg');
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", showIndhold);
+
+        function showIndhold() {
+
+            console.log("showIndhold");
+
+            document.querySelector(".button").addEventListener("click", showAdress);
+
+        }
+
+        function showAdress() {
+
+            console.log("showAdress");
+
+            document.querySelector("button").removeEventListener("click", showAdress);
+            //        document.querySelector("#displayResult").classList.add("fadeIn");
+            document.querySelector("#displayResult").classList.remove("hide");
 
 
-        <div class="phone-number">
-
-            <p>call us. <br>
-                +45 53 50 40 62</p>
-        </div>
-
-        <div class="some">
-            <p>follow us.</p>
-
-            <div class="some-icons">
-                <img src="img/facebook-white.png" alt="facebook-icon">
-                <img src="img/instagram.png" alt="instagram-icon">
-
-            </div>
-        </div>
-
-        <div class="email">
-            <p>get in contact. <br>
-                contact@kmcollective.dk</p>
-
-        </div>
-    </footer>
-
-
-
-
-
-
+        }
+    </script>
 </body>
 
 </html>
-
-<script>
-    document.addEventListener("DOMContentLoaded", showIndhold);
-
-    function showIndhold() {
-
-        console.log("showIndhold");
-
-        document.querySelector(".button").addEventListener("click", showAdress);
-
-    }
-
-    function showAdress() {
-
-        console.log("showaAdress");
-
-        document.querySelector("button").removeEventListener("click", showAdress);
-        document.querySelector("#displayResult").classList.remove("hide");
-
-
-    }
-
-</script>

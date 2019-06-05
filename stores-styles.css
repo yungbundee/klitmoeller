@@ -13,16 +13,42 @@ img {
 
 }
 
+.preload_home{
+  position: fixed;
+	top: 0;
+	z-index: 100;
+
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+}
+
+.preload_home logo{
+
+  margin: 0;
+
+}
+
+
 .hide {
 
     display: none;
 
+
 }
 
-.hidden {
-    display: none;
+.fadeOut{
+    height: 0;
+      opacity: 0;
 
+}
 
+.fadeIn{
+     height: auto;
+     opacity: 1;
+    transform: translateX(0%;)
+        opacity: 1;
+        transition: all 2s ease-in-out;
 }
 
 a {
@@ -41,6 +67,7 @@ a:hover {
     color: #313131;
 
 }
+
 a:before {
     content: "";
     position: absolute;
@@ -75,7 +102,7 @@ a:before {
 
     font-size: 20px;
 
-
+height: 11vw;
 
     font-weight: 100;
 
@@ -170,6 +197,7 @@ a:before {
     .navbar {
         float: none;
         display: block;
+        height: 0vw;
     }
 
     .main-nav {
@@ -225,16 +253,11 @@ a:before {
 }
 
 
-
-
 /*----------------STORE PAGE-------------------*/
 
 #store {
 
-    background-image: linear-gradient(#3d4b56, #131b20)
-
-
-
+    background-image: linear-gradient(#3d4b56, #131b20);
 }
 
 .locator {
@@ -244,18 +267,10 @@ a:before {
 }
 
 .splash_store {
-
-
-    /* The image used */
-    background-image: url("img/splash_store.jpg");
-
-    /* Set a specific height */
+     background-image: url("img/splash_store.jpg");
     height: 55vw;
+    /* parallax effect */
 
-
-
-
-    /* Create the parallax scrolling effect */
 
     background-position: center;
     background-repeat: no-repeat;
@@ -263,87 +278,98 @@ a:before {
 }
 
 
-.store_header {
-
-    color: #FFF9F9;
-    font-family: 'Kiona';
-    text-align: center;
-    padding: 2vw;
-    font-size: 2vw;
-
-}
-
-.store {
-
-    background-image: linear-gradient(#303b45, rgba(34, 41, 47, 0));
+.store-first-bg{
+        background-image: linear-gradient(#303b45, rgba(34, 41, 47, 0));
     width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -2vw;
     padding-bottom: 4vw;
-
-
 }
+
+.store_header {
+    color: #FFF9F9;
+    font-family: 'Kiona';
+    text-align: center;
+    padding: 2vw;
+    font-size: 3vw;
+}
+
+
 
 .store_pic {}
 
 .store_tagline {
-
     color: #9CA5A5;
     font-family: 'King';
     font-size: 1.4vw;
     padding: 1vw;
     font-weight: lighter;
     background-color: rgba(0, 0, 0, 0.65);
-    width: 60%;
+    width: 75%;
     position: absolute;
-    bottom: 76vw;
-    margin-left: 4vw;
-
-
+   top: 55%;
+    left: 11%;
+    text-align: center;
 }
 
 .store_text {
-
     color: #FFF9F9;
     font-family: 'King';
     font-size: 2vw;
     padding: 2vw;
     font-weight: lighter;
-    margin: 7vw;
+    margin: 0vw 7vw 0vw 7vw;
     line-height: 5vw;
     margin-bottom: 1vw;
-
 }
 
-.retailer {
+/*------Shop Locator-------*/
 
+.retailer {
     padding-bottom: 4vw;
     border-top: 0.1vw solid #4d4d4d;
     width: 80%;
     height: 100%;
-
-
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10vw;
-    padding-top:2vw;
+    padding-top: 15vw;
 }
 
 .retailer_header {
-
     color: #FFF9F9;
     font-family: 'Kiona';
     text-align: center;
     padding: 2vw;
     font-size: 7vw;
     margin-bottom: 3vw;
-
 }
 
-input[type=text] {
+.retailer_pic{
+        width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+        margin-top: 60vw;
+        z-index: -5;
+    }
 
+
+.retailer-text{
+        color: #FFF9F9;
+    font-family: 'Kiona';
+    font-size: 2vw;
+    padding: 2vw;
+    font-weight: lighter;
+    margin: 0vw 7vw 0vw 7vw;
+    line-height: 5vw;
+    margin-bottom: 1vw;
+    margin-top: -70vw;
+    text-align: center;
+    }
+
+input[type=text] {
     width: 27vw;
     height: 2vw;
     background-position: 10px 10px;
@@ -363,11 +389,8 @@ input[type=text] {
 
 
 .navigator {
-
     margin-left: 3vw;
     margin-right: 3vw;
-
-
 }
 
 
@@ -379,27 +402,20 @@ input[type=text] {
 
 
 #displayResult {
-
     color: #ffffff;
     font-family: 'kiona';
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 10vw;
     font-size: 2vw;
-
 }
 
 .adress {
-
-
     border-bottom: solid 1px white;
-
-
 }
 
 
 .button {
-
     width: 70%;
     height: 7vw;
     box-sizing: border-box;
@@ -411,268 +427,258 @@ input[type=text] {
     margin-right: auto;
     font-size: 2vw;
     font-family: 'kiona';
+    margin-top: 9vw;
 }
 
 .button p {
-
     color: #edeaea;
-
 }
+
+
+
+/*Media Query For Splash Parallax*/
 
 @media screen and (min-width: 641px) {
 
     .splash_store {
+        /* The image used */
+        background-image: url("img/splash_store.jpg");
 
-
-    /* The image used */
-    background-image: url("img/splash_store.jpg");
-
-    /* Set a specific height */
-    height: 55vw;
-
-
-
-
-    /* Create the parallax scrolling effect */
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        /* Set a specific height */
+        height: 55vw;
+        /* Create the parallax scrolling effect */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
-
+/*Media Query For Tablet & Desktop*/
 
 @media screen and (min-width: 768px) {
 
+    .store{
 
-    .store_header {
-
-        font-size: 2.5vw;
-
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0vw;
+        height: 40vw;
+        margin-top: -3vw;
     }
 
-    .store_text {
+    /*Our Store Section*/
 
+      .store-first-bg{
+              background-image: none;
+    background-color: #D4CABC;
+        position: relative;
+        height: 30vw;
+        width: 65vw;
+        left: -7%;
+        top: -15%;
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+    }
+    .store_header {
+position: absolute;
+        color: #000000;
+        font-family: 'Kiona';
 
         font-size: 1.5vw;
-        line-height: 2.5vw;
-        margin-bottom: 1vw;
-        margin-left: 2vw;
-        margin-right: 2vw;
+        text-align: center;
+        letter-spacing: 0.5vw;
+        top: -17.7%;
+        left: 8.7%;
+        z-index: 5;
+    }
+
+    .store_pic {
+        margin: -3vw 7vw;
+        position: absolute;
+        width: 70%;
+        height: 30.3vw;
+        left: 38%;
+        top: -16%;
+        margin: 3vw;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    .store_text {
+
+        font-size: 1vw;
+        line-height: 2vw;
+        margin: 0vw;
+        padding: 3vw 40vw 10vw 4vw;
+    }
+
+    .store_tagline {
+
+        color: #9CA5A5;
+        font-family: 'King';
+        font-size: 0.7vw;
+        padding: 0vw;
+        font-weight: lighter;
+        background-color: rgba(0, 0, 0, 0.65);
+        width: 60%;
+        position: absolute;
+        top: 78.5%;
+        left: 49%;
 
     }
 
 
+
+
+    /*Store Locator Section*/
+
+    .retailer{
+     position: relative;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0vw;
+        height: 40vw;
+        margin-top: 15vw;
+        border-top: 0.1vw solid rgba(77, 77, 77, 0);
+    }
+
+    .store-second-bg{
+              background-image: linear-gradient(#303b45, rgba(34, 41, 47, 0));
+
+       position: absolute;
+        height: 30vw;
+        width: 65vw;
+        left: 20%;
+        top: -30%;
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+    }
+
     .retailer_header {
+        position: absolute;
+        top: -5%;
+        left: 69%;
+        font-size: 3.2vw;
+        z-index: 0;
+    }
 
-        font-size: 3.5vw;
+    .pic-bg{
+                background-image: linear-gradient(rgba(114, 191, 232, 0.06), rgba(32, 41, 49, 0.42));
 
+        position: absolute;
+        height: 30vw;
+        width: 30vw;
+        left: -14%;
+        top: 25%;
+        box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .retailer_pic{
+        margin: -3vw 7vw;
+        position: absolute;
+        width: 100%;
+        height: 30.3vw;
+        left: -40%;
+        top: 60%;
+        margin: 3vw;
+        z-index: 5;
+
+    }
+
+    .retailer-text{
+      font-size: 0.7vw;
+        line-height: 1vw;
+        margin: 0vw;
+        padding: 5vw 1vw 10vw 40vw;
+    text-align: right;
+    }
+
+    .locator{
+        position: absolute;
+        top: 50%;
+        left: 35%;
     }
 
     .button {
-
-        width: 82.5%;
+        position: absolute;
+        left: 44.5%;
+        width: 46%;
         height: 4vw;
         box-sizing: border-box;
-        border: 1px solid rgba(46, 41, 41, 0.23);
-        background-color: rgb(42, 42, 42);
+        border: 1px solid rgba(118, 118, 118, 0.31);
+        background-color: rgba(42, 42, 42, 0.5);
         background-repeat: no-repeat;
         display: block;
         margin-left: auto;
         margin-right: auto;
         font-size: 1vw;
         font-family: 'kiona';
+        margin-top: 4vw;
     }
 
     .button p {
-
         color: #edeaea;
-
     }
 
 
 
     input[type=text] {
         width: 30vw;
-        ;
         height: 2vw;
         box-sizing: border-box;
         border: 2px solid rgba(46, 41, 41, 0.23);
         font-size: 16px;
         background-color: #4C5459;
-
         background-repeat: no-repeat;
         padding: 12px 10px 12px 10px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.5vw;
-        font-family: 'kiona'white;
+        font-size: 1vw;
+        font-family: 'kiona';
         text-align: center;
         margin-bottom: 2vw;
+
     }
 
     #displayResult {
 
-        display: flex;
-        flex-wrap: wrap;
 
+        flex-wrap: wrap;
+    margin-left: 50vw;
+    margin-right: 20vw;
+    margin-top: -2.4vw;
+    font-size: 1vw;
+        background-image: linear-gradient(rgba(25, 33, 38, 0), #131b20);
+         box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.08);
+         transform: translateX(-50%;)
 
     }
+
+
 
     .adress {
-
         flex-basis: 300px;
         border-bottom: solid 1px white;
-
-
-
     }
 
-
-    .store_tagline {
-
-
-        font-size: 1.4vw;
-        padding: 1vw;
-        width: 60%;
-        position: absolute;
-        bottom: -10vw;
-        margin-left: 0vw;
-
-
-    }
-
-
-
-    ¨
 }
-
 
 @media screen and (min-width: 1024px) {
 
+      .splash_store {
+        /* The image used */
+        background-image: url("img/splash_store.jpg");
 
-    .store_header {
+        /* Set a specific height */
+        height: 55vw;
+        /* Create the parallax scrolling effect */
 
-        font-size: 2.2vw;
-
-    }
-
-    .store_text {
-
-
-        font-size: 1vw;
-        line-height: 2.5vw;
-        margin-bottom: 1vw;
-        margin-left: 2vw;
-        margin-right: 2vw;
+       background-attachment: fixed;
 
     }
-
-
-    .retailer_header {
-
-        font-size: 3vw;
-
-    }
-
-
-    input[type=text] {
-        width: 30vw;
-        ;
-        height: 4vw;
-        box-sizing: border-box;
-        border: 2px solid rgba(46, 41, 41, 0.23);
-        font-size: 16px;
-        background-color: #4C5459;
-
-        background-repeat: no-repeat;
-        padding: 12px 10px 12px 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5vw;
-        font-family: 'kiona'white;
-        text-align: center;
-        margin-bottom: 2vw;
-    }
-
-    .button {
-
-        margin-bottom: -8vw;
-    }
-
-
-
-
-
-
-    .store_tagline {
-
-
-        font-size: 1.4vw;
-        padding: 1vw;
-        width: 60%;
-        position: absolute;
-        bottom: -83.5vw;
-        margin-left: 0vw;
-
-
-    }
-
-    #displayResult {
-
-        display: flex;
-        flex-wrap: wrap;
-        color: #ffffff;
-        font-family: 'kiona';
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 8vw;
-        padding-right: 1vw;
-        font-size: 1vw;
-
-
-
-    }
-
-
-
-
-    .adress {
-
-        flex-basis: 100px;
-        border-bottom: solid 1px white;
-        margin: 3vw;
-
-
-
-    }
-
-.splash_store {
-
-
-    /* The image used */
-    background-image: url("img/splash_store.jpg");
-
-    /* Set a specific height */
-    height: 55vw;
-
-
-
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-
-
-
-}
 
 /*--------------------FOOTER----------------*/
 
@@ -755,7 +761,12 @@ footer {
 
 /*------------FOOTER Media Querry Tablet----------*/
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:768px) {
+
+.footerline hr {
+    border: 1px solid #868686;
+    margin-top: 32vw;
+}
 
 
     .phone-number {
@@ -769,6 +780,9 @@ footer {
     .email {
         flex-basis: 100px;
     }
+
+
+
 }
 
 .locator {

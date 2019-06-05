@@ -46,12 +46,3 @@ $(function () {
     });
 });
 
-$(function(){
-    var mobile;
-    if (window.width <= 479) {
-        //don't load these scripts
-    }
-    else {
-        //load all scripts
-    }
-});

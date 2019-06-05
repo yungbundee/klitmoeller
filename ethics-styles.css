@@ -9,6 +9,17 @@ body {
 
 }
 
+.changeColorBlue {
+    background: #AFCAE0;
+
+}
+
+.changeColorBrown {
+    background: #BEB4A5;
+}
+
+
+
 
 a {
     position: relative;
@@ -92,10 +103,10 @@ a:before {
 
     /*    position: relative;*/
     /*  overflow: hidden;*/
-    background-color: #ffffff;
+    background-color:  #BEB4A5;
 
     font-size: 20px;
-
+height: 11vw;
 
 
     font-weight: 100;
@@ -128,7 +139,7 @@ a:before {
 .logo {
     text-decoration: none;
     /*    color: rgba(255, 255, 255, 0.7);*/
-    color: #ffffff;
+    color: #8d8d8d;
 
 }
 
@@ -143,7 +154,7 @@ a:before {
     display: block;
     padding-bottom: 10vw;
     margin-top: 23vw;
-    background-color: rgb(255, 255, 255);
+    background-color: #BEB4A5;
     width: 100%;
     height: 30vw;
     padding: 5vw;
@@ -191,6 +202,7 @@ a:before {
     .navbar {
         float: none;
         display: block;
+          height: 0vw;
     }
 
     .main-nav {
@@ -260,63 +272,6 @@ a:before {
     padding-left: 8px;
 }
 
-@media screen and (min-width: 768px) {
-
-    .header-text {
-        color: rgba(152, 152, 152, 0.63);
-        font-family: 'Kiona';
-        text-align: center;
-        font-weight: lighter;
-        font-size: 10px;
-        letter-spacing: 3px;
-        padding-top: 80px;
-    }
-
-    .changeColorBlue {
-    background: #91aabf;
-
-}
-
-
-
-.changeColorBrown {
-    background: #BEB4A5;
-}
-
-}
-
-
-.header-text {
-    color: rgba(152, 152, 152, 0.63);
-    font-family: 'Kiona';
-    text-align: center;
-    font-weight: lighter;
-    font-size: 9px;
-    letter-spacing: 3px;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    padding-left: 8px;
-}
-
-
-
-.overlay {
-
-    background: white;
-    min-height: 55vw;
-    width: 100%;
-    transition: 1s all;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-.black-overlay {
-    background: black;
-    min-height: 55vw;
-    width: 100%;
-
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-}
-
 .splash-ocean {
     background-image: url("img/Havskud_lys.jpg");
     height: 55vw;
@@ -327,24 +282,6 @@ a:before {
     background-size: cover;
 
 }
-
-
-@media screen and (min-width: 768px) {
-
-    .header-text {
-        color: rgba(152, 152, 152, 0.63);
-        font-family: 'Kiona';
-        text-align: center;
-        font-weight: lighter;
-        font-size: 10px;
-        letter-spacing: 3px;
-        padding-top: 80px;
-
-    }
-
-}
-
-
 
 /*----------------HEADER END-------------------*/
 
@@ -364,7 +301,7 @@ a:before {
 }
 
 
-.splash-ocean {}
+
 
 
 .header-about {
@@ -725,7 +662,7 @@ max-height: 310vw;
     .ethics {
         position: relative;
 
-max-height: 92vw;
+max-height: 102vw;
 
 
     }
@@ -734,7 +671,7 @@ max-height: 92vw;
 
     .header-ethics {
         font-family: 'kiona';
-        font-size: 3vw;
+        font-size: 2vw;
         color: white;
         text-align: center;
         font-weight: 100;
@@ -752,6 +689,10 @@ max-height: 92vw;
     }
 
     /*---------------Materials-------------------*/
+
+    hr{
+        border-top: rgba(255, 255, 255, 0);
+    }
 
     .first-ethics {
         position: relative;
@@ -1091,7 +1032,7 @@ footer {
 
     .footerline hr {
 
-        padding-top: 150vw;
+        padding-top: 160vw;
         margin-left: -5px;
 
     }

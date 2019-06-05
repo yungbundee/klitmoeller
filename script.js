@@ -1,6 +1,7 @@
-window.addEventListener("load", sidenVises);
+document.addEventListener("DOMContentLoaded", sidenVises);
 
 function sidenVises() {
+
 
 
     let mainNav = document.getElementById('js-menu');
