@@ -63,7 +63,6 @@ a:hover {
     font-family: 'Kiona';
     src: url('fonts/Kiona-Regular.woff2') format('woff2'),
         url('fonts/Kiona-Regular.woff') format('woff');
-    font-weight: lighter;
     font-style: normal;
 }
 
@@ -90,7 +89,7 @@ a:hover {
 
     font-size: 20px;
 
-height: 11vw;
+    height: 11vw;
 
     font-weight: 100;
 
@@ -119,8 +118,7 @@ height: 11vw;
 
 }
 
-.nav-links:hover,
-    {
+.nav-links:hover {
     text-decoration: none;
     /*    color: rgba(255, 255, 255, 0.7);*/
 
@@ -178,7 +176,7 @@ height: 11vw;
     .navbar {
         float: none;
         display: block;
-          height: 0vw;
+        height: 0vw;
     }
 
     .main-nav {
@@ -258,7 +256,7 @@ height: 11vw;
         padding-top: 80px;
     }
 
-        .header-text h1 {
+    .header-text h1 {
         color: rgba(152, 152, 152, 0.63);
 
         font-weight: bold;
@@ -769,7 +767,7 @@ height: 11vw;
 
 .main-third {
     position: relative;
-   top: 0%;
+    top: 0%;
 
 }
 
@@ -806,7 +804,7 @@ height: 11vw;
 
 .third-description {
     position: absolute;
-    margin-top:75vw;
+    margin-top: 75vw;
     left: 20%;
     font-family: 'King';
     font-size: 2.5vw;
@@ -816,12 +814,12 @@ height: 11vw;
 }
 
 .third-description a {
-padding-top: 5vw;
+    padding-top: 5vw;
     font-family: 'King';
 
     color: #D7DEDE;
 
-text-decoration: underline;
+    text-decoration: underline;
     text-align: center;
 }
 
@@ -842,7 +840,7 @@ text-decoration: underline;
         left: 7%;
         font-size: 7vw;
         z-index: 5;
-        height:15vw;
+        height: 15vw;
 
     }
 
@@ -873,7 +871,7 @@ text-decoration: underline;
     .third-video video {
         width: 85%;
 
-/*      margin-left: -1.3vw;*/
+        /*      margin-left: -1.3vw;*/
 
     }
 
@@ -906,7 +904,7 @@ footer {
     text-align: center;
     color: #868686;
 
-    padding-bottom:4vw;
+    padding-bottom: 4vw;
 
 }
 
@@ -966,10 +964,10 @@ footer {
     }
 
     .footerline hr {
-    border: 1px solid #868686;
-    margin-top: -50vw;
+        border: 1px solid #868686;
+        margin-top: -50vw;
 
-}
+    }
 
     .phone-number {
         flex-basis: 100px;
@@ -993,8 +991,8 @@ footer {
         padding-top: 40vw;
         margin-left: -1vw;
 
-          border-top: rgba(0, 0, 0, 0);
-        padding-bottom:4vw;
+        border-top: rgba(0, 0, 0, 0);
+        padding-bottom: 4vw;
 
     }
 

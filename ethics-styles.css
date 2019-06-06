@@ -5,7 +5,7 @@ body {
     background-color: #BEB4A5;
     transition: 1s all;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-     cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -78,7 +78,6 @@ a:before {
     font-family: 'Kiona';
     src: url('fonts/Kiona-Regular.woff2') format('woff2'),
         url('fonts/Kiona-Regular.woff') format('woff');
-    font-weight: lighter;
     font-style: normal;
 }
 
@@ -103,10 +102,10 @@ a:before {
 
     /*    position: relative;*/
     /*  overflow: hidden;*/
-    background-color:  #BEB4A5;
+    background-color: #BEB4A5;
 
     font-size: 20px;
-height: 11vw;
+    height: 11vw;
 
 
     font-weight: 100;
@@ -143,8 +142,7 @@ height: 11vw;
 
 }
 
-.nav-links:hover,
-    {
+.nav-links:hover {
     text-decoration: none;
     /*    color: rgba(255, 255, 255, 0.7);*/
     color: #ffdf3f;
@@ -202,7 +200,7 @@ height: 11vw;
     .navbar {
         float: none;
         display: block;
-          height: 0vw;
+        height: 0vw;
     }
 
     .main-nav {
@@ -220,7 +218,7 @@ height: 11vw;
 
     .nav-links {
         margin: 40px;
-       font-size: 0.8vw;
+        font-size: 0.8vw;
 
 
     }
@@ -564,7 +562,7 @@ height: 11vw;
 .ethics {
     margin-top: 0;
 
-max-height: 310vw;
+    max-height: 310vw;
 
 }
 
@@ -581,9 +579,11 @@ max-height: 310vw;
 .first-ethics-img {
     display: none;
 }
+
 .second-ethics-img {
     display: none;
 }
+
 .third-ethics-img {
     display: none;
 }
@@ -662,7 +662,7 @@ max-height: 310vw;
     .ethics {
         position: relative;
 
-max-height: 102vw;
+        max-height: 102vw;
 
 
     }
@@ -679,7 +679,7 @@ max-height: 102vw;
 
     }
 
-       .description-ethics {
+    .description-ethics {
         font-family: 'king';
         font-size: 1vw;
         color: white;
@@ -690,7 +690,7 @@ max-height: 102vw;
 
     /*---------------Materials-------------------*/
 
-    hr{
+    hr {
         border-top: rgba(255, 255, 255, 0);
     }
 
@@ -729,7 +729,7 @@ max-height: 102vw;
         width: 200%;
         top: 5%;
         left: -139%;
-       z-index: -1;
+        z-index: -1;
     }
 
 
@@ -741,32 +741,32 @@ max-height: 102vw;
         left: 45%;
     }
 
-.first-ethics .ethics-header {
+    .first-ethics .ethics-header {
         position: absolute;
-    top: 13%;
-    left: 8%;
+        top: 13%;
+        left: 8%;
         font-size: 1.4vw;
-    width: 30vw;
+        width: 30vw;
 
 
 
     }
 
-       .first-ethics .ethics-text {
-           position: absolute;
+    .first-ethics .ethics-text {
+        position: absolute;
         font-size: 1vw;
         line-height: 2vw;
         text-align: left;
-           top: 20%;
-           left: 20%;
-            margin: 0vw 0vw;
+        top: 20%;
+        left: 20%;
+        margin: 0vw 0vw;
 
     }
 
 
- /*---------------Production-------------------*/
+    /*---------------Production-------------------*/
 
-     .second-ethics {
+    .second-ethics {
         position: relative;
         top: -30%;
         left: 45%;
@@ -775,7 +775,7 @@ max-height: 102vw;
         padding: 0vw;
         height: 50vw;
         width: 30vw;
-         margin-top: 20vw;
+        margin-top: 20vw;
 
 
     }
@@ -798,7 +798,7 @@ max-height: 102vw;
         width: 200%;
         top: 5%;
         left: -35%;
-       z-index: -1;
+        z-index: -1;
     }
 
 
@@ -810,32 +810,32 @@ max-height: 102vw;
         left: -55%;
     }
 
-.second-ethics .ethics-header {
+    .second-ethics .ethics-header {
         position: absolute;
-    top: 11%;
-    left: -90%;
+        top: 11%;
+        left: -90%;
         font-size: 1.4vw;
-    width: 30vw;
+        width: 30vw;
 
 
 
     }
 
-       .second-ethics .ethics-text {
-           position: absolute;
+    .second-ethics .ethics-text {
+        position: absolute;
         font-size: 1vw;
         line-height: 2vw;
         text-align: left;
-           top: 19%;
-           left: -80%;
-            margin: 0vw 30vw 0vw 0vw;
+        top: 19%;
+        left: -80%;
+        margin: 0vw 30vw 0vw 0vw;
 
     }
 
 
     /*---------------Packaging-------------------*/
 
-     .third-ethics {
+    .third-ethics {
         position: relative;
         top: -30%;
         left: 45%;
@@ -844,7 +844,7 @@ max-height: 102vw;
         padding: 0vw;
         height: 50vw;
         width: 30vw;
-         margin-top: 70vw;
+        margin-top: 70vw;
 
 
 
@@ -870,7 +870,7 @@ max-height: 102vw;
         width: 150%;
         top: -35%;
         left: -120%;
-       z-index: -2;
+        z-index: -2;
     }
 
 
@@ -882,25 +882,25 @@ max-height: 102vw;
         left: 55%;
     }
 
-.third-ethics .ethics-header {
+    .third-ethics .ethics-header {
         position: absolute;
-    top: 15%;
-    left: 22%;
+        top: 15%;
+        left: 22%;
         font-size: 1.4vw;
-    width: 30vw;
+        width: 30vw;
 
 
 
     }
 
-       .third-ethics .ethics-text {
-           position: absolute;
+    .third-ethics .ethics-text {
+        position: absolute;
         font-size: 1vw;
         line-height: 2vw;
         text-align: left;
-           top: 23%;
-           left: 29%;
-            margin: 0vw -5vw 0vw 0vw;
+        top: 23%;
+        left: 29%;
+        margin: 0vw -5vw 0vw 0vw;
 
     }
 
@@ -1049,5 +1049,3 @@ footer {
         flex-basis: 100px;
     }
 }
-
-

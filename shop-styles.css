@@ -130,7 +130,6 @@ footer {
     font-family: 'Kiona';
     src: url('fonts/Kiona-Regular.woff2') format('woff2'),
         url('fonts/Kiona-Regular.woff') format('woff');
-    font-weight: lighter;
     font-style: normal;
 }
 
@@ -292,8 +291,7 @@ footer {
     color: #989898;
 }
 
-.nav-links:hover,
-    {
+.nav-links:hover {
     text-decoration: none;
     /*    color: rgba(255, 255, 255, 0.7);*/
     color: #ffdf3f;
