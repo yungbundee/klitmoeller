@@ -44,6 +44,29 @@ a:hover {
 }
 
 
+@font-face {
+    font-family: 'King';
+    src: url('fonts/King.woff2') format('woff2'),
+        url('fonts/King.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CRACKERS BRUSHER';
+    src: url('fonts/CRACKERSBRUSHER.woff2') format('woff2'),
+        url('fonts/CRACKERSBRUSHER.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('fonts/Kiona-Regular.woff2') format('woff2'),
+        url('fonts/Kiona-Regular.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
 
 
 /*--------------------FOOTER----------------*/
@@ -358,12 +381,12 @@ footer {
 
 }
 
- button:hover{
+button:hover {
 
-     transition: .4s;
+    transition: .4s;
 
 
-        color: #000000;
+    color: #000000;
 
 }
 
@@ -525,17 +548,17 @@ img.billede {
 
     }
 
-     .header-text-shop {
+    .header-text-shop {
         color: rgba(152, 152, 152, 0.63);
         font-family: 'Kiona';
         text-align: center;
-        font-weight:bold;
+        font-weight: bold;
         font-size: 10px;
         letter-spacing: 3px;
         padding-top: 80px;
     }
 
-        .header-text-shop h1 {
+    .header-text-shop h1 {
         color: rgba(152, 152, 152, 0.63);
 
         font-weight: bold;

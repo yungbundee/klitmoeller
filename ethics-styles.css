@@ -273,7 +273,7 @@ height: 11vw;
 }
 
 .splash-ocean {
-    background-image: url("img/Havskud_lys.jpg");
+    background-image: url("img/havskud.jpg");
     height: 55vw;
     /* parallax effect */
 
@@ -340,7 +340,7 @@ height: 11vw;
     background-color: rgba(0, 0, 0, 0.65);
     width: 60%;
     position: absolute;
-    bottom: 20vw;
+    bottom: 40vw;
     left: 0vw;
 }
 
@@ -348,7 +348,7 @@ height: 11vw;
 
     color: #FFF9F9;
     font-family: 'King';
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: lighter;
     margin: 0vw 8vw 8vw;
     line-height: 5vw;
@@ -373,7 +373,7 @@ height: 11vw;
 .about-second-description {
     color: #FFF9F9;
     font-family: 'King';
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: lighter;
     margin: 7vw;
     line-height: 5vw;
@@ -594,7 +594,7 @@ max-height: 310vw;
 
 .description-ethics {
     font-family: 'king';
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
     margin: 7vw;
     line-height: 4vw;
@@ -638,7 +638,7 @@ max-height: 310vw;
     top: 0;
     left: 0;
     margin-top: 8vw;
-    background-image: url(img/paperbag2.png);
+    background-image: url(img/paperbag2small.png);
     background-size: cover;
     padding: 3vw;
     height: 100vw;
